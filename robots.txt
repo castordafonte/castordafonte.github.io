@@ -1,0 +1,11 @@
+# robots.txt para castordafonte.github.io
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://castordafonte.github.io/github-page-castordafonte/sitemap.xml
+
+# Disallow archivos no públicos
+Disallow: /assets/images/*.md
+Disallow: /.git/
+Disallow: /.vscode/
