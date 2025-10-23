@@ -75,6 +75,25 @@ const translations = {
         certMS100: "MS-100: Microsoft 365 Identity and Services",
         certMS101: "MS-101: Microsoft 365 Mobility and Security",
         
+        // Certification Skills Measured
+        skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
+        skillsM365Admin: "Tenant-level implementation • Microsoft 365 workloads • Identity management",
+        skillsD365BC: "Business Central setup • Financials • Sales & purchasing • Operations",
+        skillsPPDeveloper: "Technical design • Power Apps improvements • User experience • Platform extension • Integrations",
+        skillsPPFunctional: "Dataverse configuration • Power Apps creation • Logic & automation • Environment management",
+        skillsPPAppMaker: "Canvas apps • Model-driven apps • Power Automate flows • Power Pages",
+        skillsM365Teams: "Teams environment • Chat & channels • Meetings & calling • Monitoring & troubleshooting",
+        skillsPowerBI: "Data preparation • Data modeling • Visualizations • Power BI management",
+        skillsAzureAI: "AI workloads • Machine learning • Computer vision • NLP",
+        skillsAzureData: "Data concepts • Relational & non-relational data • Data workloads",
+        skillsAzure: "Cloud concepts • Azure services • Security • Compliance",
+        skillsPPFund: "Power Platform value • Environment management • Power Apps • Power Automate • Power Pages",
+        skillsD365Fund: "Dynamics 365 applications • Finance • Supply chain • Commerce",
+        skillsSecurity: "Security concepts • Identity & access • Threat protection • Compliance",
+        skillsM365Fund: "Cloud concepts • Microsoft 365 apps • Security & compliance • Pricing & licensing",
+        skillsMS100: "Identity & services management • Microsoft 365 workloads configuration",
+        skillsMS101: "Security management • Device management • Data protection",
+        
         // Skills Section
         skillsTitle: "Habilidades Técnicas",
         skillCat1: "Microsoft Dynamics 365",
@@ -172,6 +191,25 @@ const translations = {
         certSecurity: "Security, Compliance, and Identity Fundamentals",
         certMS100: "MS-100: Microsoft 365 Identity and Services",
         certMS101: "MS-101: Microsoft 365 Mobility and Security",
+        
+        // Certification Skills Measured
+        skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
+        skillsM365Admin: "Tenant-level implementation • Microsoft 365 workloads • Identity management",
+        skillsD365BC: "Business Central setup • Financials • Sales & purchasing • Operations",
+        skillsPPDeveloper: "Technical design • Power Apps improvements • User experience • Platform extension • Integrations",
+        skillsPPFunctional: "Dataverse configuration • Power Apps creation • Logic & automation • Environment management",
+        skillsPPAppMaker: "Canvas apps • Model-driven apps • Power Automate flows • Power Pages",
+        skillsM365Teams: "Teams environment • Chat & channels • Meetings & calling • Monitoring & troubleshooting",
+        skillsPowerBI: "Data preparation • Data modeling • Visualizations • Power BI management",
+        skillsAzureAI: "AI workloads • Machine learning • Computer vision • NLP",
+        skillsAzureData: "Data concepts • Relational & non-relational data • Data workloads",
+        skillsAzure: "Cloud concepts • Azure services • Security • Compliance",
+        skillsPPFund: "Power Platform value • Environment management • Power Apps • Power Automate • Power Pages",
+        skillsD365Fund: "Dynamics 365 applications • Finance • Supply chain • Commerce",
+        skillsSecurity: "Security concepts • Identity & access • Threat protection • Compliance",
+        skillsM365Fund: "Cloud concepts • Microsoft 365 apps • Security & compliance • Pricing & licensing",
+        skillsMS100: "Identity & services management • Microsoft 365 workloads configuration",
+        skillsMS101: "Security management • Device management • Data protection",
         
         // Skills Section
         skillsTitle: "Technical Skills",
@@ -319,6 +357,24 @@ function updatePageContent() {
     certCards[12].textContent = t.certSecurity;
     certCards[13].textContent = t.certMS100;
     certCards[14].textContent = t.certMS101;
+    
+    // Certification skills descriptions
+    const certSkills = document.querySelectorAll('.cert-skills');
+    certSkills[0].textContent = t.skillsPPSolutionArchitect;
+    certSkills[1].textContent = t.skillsM365Admin;
+    certSkills[2].textContent = t.skillsD365BC;
+    certSkills[3].textContent = t.skillsPPDeveloper;
+    certSkills[4].textContent = t.skillsPPFunctional;
+    certSkills[5].textContent = t.skillsPPAppMaker;
+    certSkills[6].textContent = t.skillsM365Teams;
+    certSkills[7].textContent = t.skillsAzureAI;
+    certSkills[8].textContent = t.skillsAzureData;
+    certSkills[9].textContent = t.skillsAzure;
+    certSkills[10].textContent = t.skillsPPFund;
+    certSkills[11].textContent = t.skillsD365Fund;
+    certSkills[12].textContent = t.skillsSecurity;
+    certSkills[13].textContent = t.skillsMS100;
+    certSkills[14].textContent = t.skillsMS101;
     
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
