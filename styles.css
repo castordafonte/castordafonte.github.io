@@ -67,7 +67,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #00A2ED 100%);
     color: white;
     padding: 120px 0 80px;
     text-align: center;
@@ -378,7 +378,8 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
     text-align: center;
     transition: all 0.3s ease;
     display: flex;
@@ -388,7 +389,8 @@ body {
 
 .cert-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
 }
 
 .cert-badge {
