@@ -1,0 +1,28 @@
+{
+  "name": "github-page-castordafonte",
+  "version": "1.0.0",
+  "description": "Página web personal de Castor Dafonte - Consultor Microsoft Dynamics 365",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/castordafonte/github-page-castordafonte.git"
+  },
+  "keywords": [
+    "github-pages",
+    "portfolio",
+    "curriculum",
+    "personal-website",
+    "cv",
+    "microsoft-dynamics-365",
+    "power-platform",
+    "business-central",
+    "dynamics-nav"
+  ],
+  "author": "Castor Dafonte",
+  "license": "MIT",
+  "homepage": "https://castordafonte.github.io/github-page-castordafonte/"
+}

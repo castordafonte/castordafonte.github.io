@@ -1,0 +1,16 @@
+# Archivos que deben ser añadidos por el usuario
+cv.pdf
+project1.jpg
+project2.jpg
+project3.jpg
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Logs
+*.log
