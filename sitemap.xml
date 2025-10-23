@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://castordafonte.github.io/github-page-castordafonte/</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://castordafonte.github.io/github-page-castordafonte/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://castordafonte.github.io/github-page-castordafonte/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://castordafonte.github.io/github-page-castordafonte/"/>
   </url>
   <url>
     <loc>https://castordafonte.github.io/github-page-castordafonte/#inicio</loc>

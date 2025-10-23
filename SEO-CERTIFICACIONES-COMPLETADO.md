@@ -126,7 +126,7 @@ Para mejorar aún más el SEO social, crea estas imágenes:
 Sugerencia de diseño:
 - Fondo: Azul corporativo Microsoft (#0078D4)
 - Texto: "Castor Dafonte"
-- Subtítulo: "20+ Certificaciones Microsoft Activas"
+- Subtítulo: "12+ Certificaciones Microsoft Activas"
 - Iconos: Badges de Expert y Associate
 - Logo: Microsoft + ARBENTIA
 
