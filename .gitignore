@@ -1,8 +1,8 @@
 # Archivos que deben ser añadidos por el usuario
 cv.pdf
-project1.jpg
-project2.jpg
-project3.jpg
+assets/images/project1.jpg
+assets/images/project2.jpg
+assets/images/project3.jpg
 
 # Archivos del sistema
 .DS_Store
