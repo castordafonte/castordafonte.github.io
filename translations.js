@@ -55,7 +55,6 @@ const translations = {
         certLevelAssociate: "⭐⭐ Associate Level",
         certLevelFundamentals: "⭐ Fundamentals",
         certLevelOther: "Otras Certificaciones",
-        certOtherSubtitle: "Exámenes individuales que forman parte de certificaciones más amplias",
         certVerifyLink: "Verificar certificación",
         certInfoLink: "Información del examen",
         
@@ -321,19 +320,16 @@ function updatePageContent() {
     certCards[13].textContent = t.certMS100;
     certCards[14].textContent = t.certMS101;
     
-    // Certification links
-    document.querySelectorAll('.cert-verify-link').forEach((link, index) => {
-        if (index < 13) {
-            link.innerHTML = `<i class="fas fa-external-link-alt"></i> ${t.certVerifyLink}`;
-        } else {
-            link.innerHTML = `<i class="fas fa-info-circle"></i> ${t.certInfoLink}`;
-        }
+    // Certification links - Todos usan el mismo estilo ahora
+    document.querySelectorAll('.cert-verify-link').forEach((link) => {
+        link.innerHTML = `<i class="fas fa-external-link-alt"></i> ${t.certVerifyLink}`;
     });
     
     // Other certifications subtitle
-    const otherCertSubtitle = document.querySelector('#certificaciones > .container > p:nth-of-type(2)');
-    if (otherCertSubtitle) {
-        otherCertSubtitle.textContent = t.certOtherSubtitle;
+    const certSection = document.querySelector('#certificaciones .container');
+    const allParagraphs = certSection.querySelectorAll('p[style*="text-align: center"]');
+    if (allParagraphs.length >= 2) {
+        allParagraphs[1].textContent = t.certOtherSubtitle;
     }
     
     // Skills

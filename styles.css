@@ -74,30 +74,29 @@ body {
 /* Language Switcher */
 .language-switcher {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    align-items: center;
 }
 
 .lang-btn {
     background: transparent;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 0.4rem 0.8rem;
-    font-size: 1.5rem;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     line-height: 1;
+    opacity: 0.5;
 }
 
 .lang-btn:hover {
-    border-color: #007bff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .lang-btn.active {
-    border-color: #007bff;
-    background: rgba(0, 123, 255, 0.1);
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 /* Hero Section */
@@ -692,10 +691,16 @@ body {
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+        order: 2;
     }
     
     .language-switcher {
-        order: -1;
+        order: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .lang-btn {
+        font-size: 2rem;
     }
     
     .hero-title {
