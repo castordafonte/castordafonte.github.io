@@ -79,24 +79,39 @@ body {
 }
 
 .lang-btn {
-    background: transparent;
-    border: none;
-    padding: 0.3rem 0.5rem;
-    font-size: 1.8rem;
+    background: white;
+    border: 3px solid transparent;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     line-height: 1;
-    opacity: 0.5;
+    opacity: 0.6;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Borde con colores de España (rojo y amarillo) */
+.lang-btn-es {
+    border-image: linear-gradient(to bottom, #AA151B 33%, #F1BF00 33%, #F1BF00 66%, #AA151B 66%) 1;
+}
+
+/* Borde con colores del Reino Unido (rojo, blanco, azul) */
+.lang-btn-en {
+    border-image: linear-gradient(to bottom, #012169 40%, #FFFFFF 40%, #FFFFFF 60%, #C8102E 60%) 1;
 }
 
 .lang-btn:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
+    transform: scale(1.05);
+    opacity: 0.85;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .lang-btn.active {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
 
 /* Hero Section */
@@ -709,7 +724,8 @@ body {
     }
     
     .lang-btn {
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
     
     .hero-title {
