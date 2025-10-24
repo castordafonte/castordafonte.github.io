@@ -46,7 +46,10 @@ const translations = {
         educationTitle: "Educación",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
-        educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
+    educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
+    // Language skills for Education
+    educationEnglishLevel: "Nivel de inglés: B2",
+    educationEnglishStudying: "Actualmente cursando: C1",
         
         // Certifications Section
         certificationsTitle: "Certificaciones Microsoft",
@@ -162,7 +165,10 @@ const translations = {
         educationTitle: "Education",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
-        educationDescription: "Training in information technology and software development.",
+    educationDescription: "Training in information technology and software development.",
+    // Language skills for Education
+    educationEnglishLevel: "English level: B2",
+    educationEnglishStudying: "Currently studying: C1",
         
         // Certifications Section
         certificationsTitle: "Microsoft Certifications",
@@ -329,7 +335,14 @@ function updatePageContent() {
     document.querySelector('#educacion .section-title').textContent = t.educationTitle;
     document.querySelector('.education-item h3').textContent = t.educationSchool;
     document.querySelector('.education-date').textContent = t.educationDate;
-    document.querySelector('.education-item p').textContent = t.educationDescription;
+    // Degree/description
+    const degreeEl = document.querySelector('.education-degree');
+    if (degreeEl) degreeEl.textContent = t.educationDescription;
+    // Language level and current study (B2 / C1)
+    const langLevelEl = document.querySelector('.education-language-level');
+    if (langLevelEl) langLevelEl.textContent = t.educationEnglishLevel;
+    const langCurrentEl = document.querySelector('.education-language-current');
+    if (langCurrentEl) langCurrentEl.textContent = t.educationEnglishStudying;
     
     // Certifications
     document.querySelector('#certificaciones .section-title').textContent = t.certificationsTitle;
