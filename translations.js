@@ -293,14 +293,14 @@ function updateMetaTags() {
 function updatePageContent() {
     const t = translations[currentLang];
     
-    // Navigation
-    document.querySelector('[href="#inicio"]').textContent = t.navHome;
-    document.querySelector('[href="#sobre-mi"]').textContent = t.navAbout;
-    document.querySelector('[href="#experiencia"]').textContent = t.navExperience;
-    document.querySelector('[href="#educacion"]').textContent = t.navEducation;
-    document.querySelector('[href="#certificaciones"]').textContent = t.navCertifications;
-    document.querySelector('[href="#habilidades"]').textContent = t.navSkills;
-    document.querySelector('[href="#contacto"]').textContent = t.navContact;
+    // Navigation (sin "Inicio" porque ahora es el logo)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks[0].textContent = t.navAbout;
+    navLinks[1].textContent = t.navExperience;
+    navLinks[2].textContent = t.navEducation;
+    navLinks[3].textContent = t.navCertifications;
+    navLinks[4].textContent = t.navSkills;
+    navLinks[5].textContent = t.navContact;
     
     // Hero
     document.querySelector('.hero-title').textContent = t.heroTitle;
