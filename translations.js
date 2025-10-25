@@ -50,6 +50,9 @@ const translations = {
     // Language skills for Education
     educationEnglishLevel: "Nivel de inglés: B2",
     educationEnglishStudying: "Actualmente cursando: C1",
+    educationEnglishTitle: "Nivel de inglés",
+    educationEnglishDate: "B2",
+    educationEnglishCurrent: "Actualmente cursando el nivel C1",
         
         // Certifications Section
         certificationsTitle: "Certificaciones Microsoft",
@@ -175,6 +178,9 @@ const translations = {
     // Language skills for Education
     educationEnglishLevel: "English level: B2",
     educationEnglishStudying: "Currently studying: C1",
+    educationEnglishTitle: "English level",
+    educationEnglishDate: "B2",
+    educationEnglishCurrent: "Currently studying C1 level",
         
         // Certifications Section
         certificationsTitle: "Microsoft Certifications",
@@ -345,12 +351,30 @@ function updatePageContent() {
     
     // Education
     document.querySelector('#educacion .section-title').textContent = t.educationTitle;
-    document.querySelector('.education-item h3').textContent = t.educationSchool;
-    document.querySelector('.education-date').textContent = t.educationDate;
-    // Degree/description
-    const degreeEl = document.querySelector('.education-degree');
-    if (degreeEl) degreeEl.textContent = t.educationDescription;
-    // Language level and current study (B2 / C1)
+    const educationItems = document.querySelectorAll('.education-item');
+    // First education item (CIFP A Carballeira)
+    if (educationItems[0]) {
+        const firstH3 = educationItems[0].querySelector('h3');
+        if (firstH3 && !firstH3.classList.contains('education-english-title')) {
+            firstH3.textContent = t.educationSchool;
+        }
+        const firstDate = educationItems[0].querySelector('.education-date');
+        if (firstDate) firstDate.textContent = t.educationDate;
+        const firstDegree = educationItems[0].querySelector('.education-degree');
+        if (firstDegree && !firstDegree.classList.contains('education-english-studying')) {
+            firstDegree.textContent = t.educationDescription;
+        }
+    }
+    // Second education item (English level)
+    if (educationItems[1]) {
+        const englishTitle = educationItems[1].querySelector('.education-english-title');
+        if (englishTitle) englishTitle.textContent = t.educationEnglishTitle;
+        const englishDate = educationItems[1].querySelector('.education-date');
+        if (englishDate) englishDate.textContent = t.educationEnglishDate;
+        const englishStudying = educationItems[1].querySelector('.education-english-studying');
+        if (englishStudying) englishStudying.textContent = t.educationEnglishCurrent;
+    }
+    // Language level and current study (B2 / C1) - legacy elements from first card
     const langLevelEl = document.querySelector('.education-language-level');
     if (langLevelEl) langLevelEl.textContent = t.educationEnglishLevel;
     const langCurrentEl = document.querySelector('.education-language-current');

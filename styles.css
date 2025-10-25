@@ -99,7 +99,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #007bff;
+    background: var(--color-primary);
     transition: width 0.3s ease;
 }
 
@@ -288,7 +288,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: #007bff;
+    background: var(--color-primary);
     border-radius: 2px;
 }
 
@@ -475,7 +475,7 @@ body {
     font-weight: 700;
     margin: 3rem 0 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #007bff;
+    border-bottom: 3px solid var(--color-primary);
 }
 
 .certifications-grid {
@@ -645,7 +645,7 @@ body {
 
 .tech-tag {
     background: #f8f9fa;
-    color: #007bff;
+    color: var(--color-primary);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -661,7 +661,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #007bff;
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
