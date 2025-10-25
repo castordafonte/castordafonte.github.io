@@ -77,6 +77,9 @@ const translations = {
         certSecurity: "Security, Compliance, and Identity Fundamentals",
         certMS100: "MS-100: Microsoft 365 Identity and Services",
         certMS101: "MS-101: Microsoft 365 Mobility and Security",
+        certAppliedCanvasApps: "Applied Skills: Crear y gestionar aplicaciones canvas con Power Apps",
+        certAppliedPowerAutomate: "Applied Skills: Crear y gestionar procesos automatizados con Power Automate",
+        certAppliedAD: "Applied Skills: Administrar Active Directory Domain Services",
         
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
@@ -96,6 +99,9 @@ const translations = {
         skillsM365Fund: "Cloud concepts • Microsoft 365 apps • Security & compliance • Pricing & licensing",
         skillsMS100: "Identity & services management • Microsoft 365 workloads configuration",
         skillsMS101: "Security management • Device management • Data protection",
+        skillsAppliedCanvasApps: "Diseño de aplicaciones canvas • Desarrollo Power Apps • Gestión de apps",
+        skillsAppliedPowerAutomate: "Automatización de flujos • Power Automate • Optimización de procesos",
+        skillsAppliedAD: "Gestión Active Directory • Domain Services • Administración de usuarios y grupos",
         
         // Skills Section
         skillsTitle: "Habilidades Técnicas",
@@ -197,6 +203,9 @@ const translations = {
         certSecurity: "Security, Compliance, and Identity Fundamentals",
         certMS100: "MS-100: Microsoft 365 Identity and Services",
         certMS101: "MS-101: Microsoft 365 Mobility and Security",
+        certAppliedCanvasApps: "Applied Skills: Create and Manage Canvas Apps with Power Apps",
+        certAppliedPowerAutomate: "Applied Skills: Create and Manage Automated Processes with Power Automate",
+        certAppliedAD: "Applied Skills: Administer Active Directory Domain Services",
         
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
@@ -216,6 +225,9 @@ const translations = {
         skillsM365Fund: "Cloud concepts • Microsoft 365 apps • Security & compliance • Pricing & licensing",
         skillsMS100: "Identity & services management • Microsoft 365 workloads configuration",
         skillsMS101: "Security management • Device management • Data protection",
+        skillsAppliedCanvasApps: "Canvas apps design • Power Apps development • App management",
+        skillsAppliedPowerAutomate: "Workflow automation • Power Automate flows • Process optimization",
+        skillsAppliedAD: "Active Directory management • Domain Services • User & group administration",
         
         // Skills Section
         skillsTitle: "Technical Skills",
@@ -370,6 +382,9 @@ function updatePageContent() {
     certCards[12].textContent = t.certSecurity;
     certCards[13].textContent = t.certMS100;
     certCards[14].textContent = t.certMS101;
+    certCards[15].textContent = t.certAppliedCanvasApps;
+    certCards[16].textContent = t.certAppliedPowerAutomate;
+    certCards[17].textContent = t.certAppliedAD;
     
     // Certification skills descriptions
     const certSkills = document.querySelectorAll('.cert-skills');
@@ -388,6 +403,9 @@ function updatePageContent() {
     certSkills[12].textContent = t.skillsSecurity;
     certSkills[13].textContent = t.skillsMS100;
     certSkills[14].textContent = t.skillsMS101;
+    certSkills[15].textContent = t.skillsAppliedCanvasApps;
+    certSkills[16].textContent = t.skillsAppliedPowerAutomate;
+    certSkills[17].textContent = t.skillsAppliedAD;
     
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
