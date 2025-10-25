@@ -20,7 +20,6 @@ const translations = {
         heroSubtitle: "Microsoft Dynamics 365 Consultant",
         heroDescription: "Consultor especializado en Microsoft Dynamics 365, Dynamics NAV y Power Platform. Experto certificado en soluciones empresariales Microsoft con amplia experiencia en Business Central.",
         heroButtonContact: "Contactar",
-        heroButtonCV: "Descargar CV",
         
         // About Section
         aboutTitle: "Sobre mí",
@@ -148,7 +147,6 @@ const translations = {
         heroSubtitle: "Microsoft Dynamics 365 Consultant",
         heroDescription: "Consultant specialized in Microsoft Dynamics 365, Dynamics NAV and Power Platform. Certified expert in Microsoft enterprise solutions with extensive experience in Business Central.",
         heroButtonContact: "Contact",
-        heroButtonCV: "Download CV",
         
         // About Section
         aboutTitle: "About Me",
@@ -325,7 +323,6 @@ function updatePageContent() {
     document.querySelector('.hero-subtitle').textContent = t.heroSubtitle;
     document.querySelector('.hero-description').textContent = t.heroDescription;
     document.querySelector('.hero-buttons .btn-primary').textContent = t.heroButtonContact;
-    document.querySelector('.hero-buttons .btn-secondary').textContent = t.heroButtonCV;
     
     // About
     document.querySelector('#sobre-mi .section-title').textContent = t.aboutTitle;
