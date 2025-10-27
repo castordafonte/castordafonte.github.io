@@ -249,6 +249,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: document.getElementById('message').value
             };
             
+            // Debug: ver los valores capturados
+            console.log('Valores capturados:', templateParams);
+            
             // Enviar email usando EmailJS
             emailjs.send(
                 EMAILJS_CONFIG.serviceID,
