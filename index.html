@@ -624,24 +624,21 @@
                             <a href="https://learn.microsoft.com/es-es/users/castordafonte/" target="_blank" rel="noopener" class="social-link" title="Microsoft Learn Profile"><i class="fab fa-microsoft"></i></a>
                         </div>
                     </div>
-                    <form class="contact-form" action="https://formsubmit.co/castordafonte@outlook.es" method="POST">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        
+                    <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <input type="text" name="Nombre" placeholder="Tu nombre" required>
+                            <input type="text" name="from_name" id="from_name" placeholder="Tu nombre" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="Email" placeholder="Tu email" required>
+                            <input type="email" name="reply_to" id="reply_to" placeholder="Tu email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="Asunto" placeholder="Asunto" required>
+                            <input type="text" name="subject" id="subject" placeholder="Asunto" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="Mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                            <textarea name="message" id="message" placeholder="Tu mensaje" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        <div id="form-status" style="margin-top: 1rem; display: none;"></div>
                     </form>
                 </div>
             </div>
@@ -654,6 +651,8 @@
         </div>
     </footer>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
