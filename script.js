@@ -49,25 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Manejo del formulario de contacto
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Obtener datos del formulario
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-    
-    // Aquí puedes integrar con un servicio de email como EmailJS
-    // Por ahora, mostrar un mensaje de confirmación
-    alert('¡Gracias por tu mensaje! Te responderé pronto.');
-    
-    // Limpiar formulario
-    this.reset();
-});
-
 // Efecto typing para el título principal
 function typeWriter(element, text, speed = 100) {
     let i = 0;
@@ -238,6 +219,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            console.log('=== DEBUG FORM ===');
+            console.log('Form:', contactForm);
+            console.log('Input from_name element:', contactForm.querySelector('input[name="from_name"]'));
+            console.log('Input from_name value:', contactForm.querySelector('input[name="from_name"]')?.value);
+            console.log('Todos los inputs:', contactForm.querySelectorAll('input'));
             
             // Deshabilitar botón durante envío
             const submitBtn = contactForm.querySelector('button[type="submit"]');
