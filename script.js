@@ -212,3 +212,65 @@ scrollToTopBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+// ===== EmailJS Contact Form =====
+// Configuración de EmailJS
+const EMAILJS_CONFIG = {
+    serviceID: 'service_1xi4fd2',      // Reemplazar con tu Service ID
+    templateID: 'template_hbvy6au',    // Reemplazar con tu Template ID
+    publicKey: 'U-Wf3ClHCZ12zZsBH'       // Reemplazar con tu Public Key
+};
+
+// Inicializar EmailJS
+(function() {
+    emailjs.init(EMAILJS_CONFIG.publicKey);
+})();
+
+// Manejar envío del formulario
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Deshabilitar botón durante envío
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            // Enviar email usando EmailJS
+            emailjs.sendForm(
+                EMAILJS_CONFIG.serviceID,
+                EMAILJS_CONFIG.templateID,
+                contactForm
+            )
+            .then(function() {
+                // Éxito
+                formStatus.style.display = 'block';
+                formStatus.style.color = 'var(--color-primary)';
+                formStatus.textContent = '✓ Mensaje enviado correctamente. ¡Gracias por contactar!';
+                contactForm.reset();
+                
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            })
+            .catch(function(error) {
+                // Error
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#dc3545';
+                formStatus.textContent = '✗ Error al enviar el mensaje. Por favor, intenta de nuevo.';
+                console.error('EmailJS Error:', error);
+            })
+            .finally(function() {
+                // Rehabilitar botón
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
+        });
+    }
+});
