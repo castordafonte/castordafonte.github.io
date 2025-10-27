@@ -241,11 +241,19 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
             
+            // Capturar valores del formulario
+            const templateParams = {
+                from_name: document.getElementById('from_name').value,
+                reply_to: document.getElementById('reply_to').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
             // Enviar email usando EmailJS
-            emailjs.sendForm(
+            emailjs.send(
                 EMAILJS_CONFIG.serviceID,
                 EMAILJS_CONFIG.templateID,
-                contactForm
+                templateParams
             )
             .then(function() {
                 // Éxito
