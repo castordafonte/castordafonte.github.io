@@ -45,11 +45,8 @@ const translations = {
         educationTitle: "Educación",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
-    educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
-    // Language skills for Education
-    educationEnglishLevel: "Nivel de inglés: B2",
-    educationEnglishStudying: "Actualmente cursando: C1",
-    educationEnglishTitle: "Nivel de inglés",
+        educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
+        educationEnglishTitle: "Nivel de inglés",
     educationEnglishDate: "B2",
     educationEnglishCurrent: "Actualmente cursando el nivel C1",
         
@@ -172,11 +169,8 @@ const translations = {
         educationTitle: "Education",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
-    educationDescription: "Training in information technology and software development.",
-    // Language skills for Education
-    educationEnglishLevel: "English level: B2",
-    educationEnglishStudying: "Currently studying: C1",
-    educationEnglishTitle: "English level",
+        educationDescription: "Training in information technology and software development.",
+        educationEnglishTitle: "English level",
     educationEnglishDate: "B2",
     educationEnglishCurrent: "Currently studying C1 level",
         
@@ -371,11 +365,7 @@ function updatePageContent() {
         const englishStudying = educationItems[1].querySelector('.education-english-studying');
         if (englishStudying) englishStudying.textContent = t.educationEnglishCurrent;
     }
-    // Language level and current study (B2 / C1) - legacy elements from first card
-    const langLevelEl = document.querySelector('.education-language-level');
-    if (langLevelEl) langLevelEl.textContent = t.educationEnglishLevel;
-    const langCurrentEl = document.querySelector('.education-language-current');
-    if (langCurrentEl) langCurrentEl.textContent = t.educationEnglishStudying;
+
     
     // Certifications
     document.querySelector('#certificaciones .section-title').textContent = t.certificationsTitle;
