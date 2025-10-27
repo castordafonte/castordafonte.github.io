@@ -454,11 +454,19 @@ function updatePageContent() {
     document.querySelector('#contacto .section-title').textContent = t.contactTitle;
     document.querySelector('.contact-info h3').textContent = t.contactSubtitle;
     document.querySelector('.contact-info p').textContent = t.contactText;
-    document.querySelector('input[name="name"]').placeholder = t.contactFormName;
-    document.querySelector('input[name="email"]').placeholder = t.contactFormEmail;
-    document.querySelector('input[name="subject"]').placeholder = t.contactFormSubject;
-    document.querySelector('textarea[name="message"]').placeholder = t.contactFormMessage;
-    document.querySelector('.contact-form button').textContent = t.contactFormButton;
+    
+    // Contact form placeholders (EmailJS field names)
+    const nameInput = document.querySelector('input[name="from_name"]');
+    const emailInput = document.querySelector('input[name="reply_to"]');
+    const subjectInput = document.querySelector('input[name="subject"]');
+    const messageInput = document.querySelector('textarea[name="message"]');
+    const submitBtn = document.querySelector('.contact-form button');
+    
+    if (nameInput) nameInput.placeholder = t.contactFormName;
+    if (emailInput) emailInput.placeholder = t.contactFormEmail;
+    if (subjectInput) subjectInput.placeholder = t.contactFormSubject;
+    if (messageInput) messageInput.placeholder = t.contactFormMessage;
+    if (submitBtn) submitBtn.textContent = t.contactFormButton;
     
     // Footer
     document.querySelector('.footer p').textContent = t.footerCopyright;
