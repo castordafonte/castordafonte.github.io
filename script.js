@@ -245,12 +245,13 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
             
-            // Capturar valores del formulario
+            // Capturar valores del formulario usando FormData
+            const formData = new FormData(contactForm);
             const templateParams = {
-                from_name: document.getElementById('from_name').value,
-                reply_to: document.getElementById('reply_to').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
+                from_name: formData.get('from_name'),
+                reply_to: formData.get('reply_to'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
             };
             
             // Debug: ver los valores capturados
