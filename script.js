@@ -216,18 +216,22 @@ scrollToTopBtn.addEventListener('click', function() {
 // ===== EmailJS Contact Form =====
 // Configuración de EmailJS
 const EMAILJS_CONFIG = {
-    serviceID: 'service_1xi4fd2',      // Reemplazar con tu Service ID
-    templateID: 'template_hbvy6au',    // Reemplazar con tu Template ID
-    publicKey: 'U-Wf3ClHCZ12zZsBH'       // Reemplazar con tu Public Key
+    serviceID: 'service_1xi4fd2',
+    templateID: 'template_hbvy6au',
+    publicKey: 'U-Wf3ClHCZ12zZsBH'
 };
-
-// Inicializar EmailJS
-(function() {
-    emailjs.init(EMAILJS_CONFIG.publicKey);
-})();
 
 // Manejar envío del formulario
 document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar EmailJS cuando el DOM esté listo
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init(EMAILJS_CONFIG.publicKey);
+        console.log('EmailJS inicializado correctamente');
+    } else {
+        console.error('EmailJS no está cargado');
+        return;
+    }
+    
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
     
