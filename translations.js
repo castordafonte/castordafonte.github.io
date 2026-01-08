@@ -80,6 +80,8 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Crear y gestionar aplicaciones canvas con Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Crear y gestionar procesos automatizados con Power Automate",
         certAppliedAD: "Applied Skills: Administrar Active Directory Domain Services",
+        certAppliedCopilotStudio: "Applied Skills: Crear agentes en Microsoft Copilot Studio",
+        certAppliedGitHubCopilotDev: "Applied Skills: Acelerar el desarrollo de apps usando GitHub Copilot",
         certGitHubCopilot: "GitHub Copilot",
         certGitHubFoundations: "GitHub Foundations",
 
@@ -104,6 +106,8 @@ const translations = {
         skillsAppliedCanvasApps: "Diseño de aplicaciones canvas • Desarrollo Power Apps • Gestión de apps",
         skillsAppliedPowerAutomate: "Automatización de flujos • Power Automate • Optimización de procesos",
         skillsAppliedAD: "Gestión Active Directory • Domain Services • Administración de usuarios y grupos",
+        skillsAppliedCopilotStudio: "Copilot Studio • Agentes IA • IA conversacional • Automatización",
+        skillsAppliedGitHubCopilotDev: "GitHub Copilot • Desarrollo asistido por IA • Aceleración de código • Productividad",
         skillsD365BCDev: "Desarrollo AL • Extensiones • Personalización Business Central • Integraciones",
         skillsGitHubCopilot: "Codificación asistida por IA • Generación de código • Productividad del desarrollador",
         skillsGitHubFoundations: "Fundamentos de Git • Colaboración en GitHub • Control de versiones",
@@ -211,6 +215,8 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Create and Manage Canvas Apps with Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Create and Manage Automated Processes with Power Automate",
         certAppliedAD: "Applied Skills: Administer Active Directory Domain Services",
+        certAppliedCopilotStudio: "Applied Skills: Create agents in Microsoft Copilot Studio",
+        certAppliedGitHubCopilotDev: "Applied Skills: Accelerate app development by using GitHub Copilot",
         certGitHubCopilot: "GitHub Copilot",
         certGitHubFoundations: "GitHub Foundations",
 
@@ -236,6 +242,8 @@ const translations = {
         skillsAppliedCanvasApps: "Canvas apps design • Power Apps development • App management",
         skillsAppliedPowerAutomate: "Workflow automation • Power Automate flows • Process optimization",
         skillsAppliedAD: "Active Directory management • Domain Services • User & group administration",
+        skillsAppliedCopilotStudio: "Copilot Studio • AI agents • Conversational AI • Automation",
+        skillsAppliedGitHubCopilotDev: "GitHub Copilot • AI-assisted development • Code acceleration • Productivity",
         skillsGitHubCopilot: "AI-assisted coding • Code generation • Developer productivity",
         skillsGitHubFoundations: "Git fundamentals • GitHub collaboration • Version control",
 
@@ -388,11 +396,11 @@ function updatePageContent() {
     certLevelTitles[2].textContent = t.certLevelFundamentals;
     certLevelTitles[3].textContent = t.certLevelOther;
 
-    // Certification cards - Total 21 cards:
+    // Certification cards - Total 23 cards:
     // Expert (2): Solution Architect, M365 Admin
     // Associate (6): D365BC Functional, D365BC Developer, PP Developer, PP Functional, PP App Maker, M365 Teams
     // Fundamentals (6): Azure AI, Azure Data, Azure, Power Platform, D365 ERP, Security
-    // Other (7): MS-100, MS-101, Canvas Apps, Power Automate, AD, GitHub Copilot, GitHub Foundations
+    // Other (9): MS-100, MS-101, Canvas Apps, Power Automate, AD, Copilot Studio, GitHub Copilot Dev, GitHub Copilot, GitHub Foundations
     const certCards = document.querySelectorAll('.cert-card h4');
     certCards[0].textContent = t.certPPSolutionArchitect;
     certCards[1].textContent = t.certM365Admin;
@@ -413,8 +421,10 @@ function updatePageContent() {
     certCards[16].textContent = t.certAppliedCanvasApps;
     certCards[17].textContent = t.certAppliedPowerAutomate;
     certCards[18].textContent = t.certAppliedAD;
-    certCards[19].textContent = t.certGitHubCopilot;
-    certCards[20].textContent = t.certGitHubFoundations;
+    certCards[19].textContent = t.certAppliedCopilotStudio;
+    certCards[20].textContent = t.certAppliedGitHubCopilotDev;
+    certCards[21].textContent = t.certGitHubCopilot;
+    certCards[22].textContent = t.certGitHubFoundations;
 
     // Certification skills descriptions - match same order as cards above
     const certSkills = document.querySelectorAll('.cert-skills');
@@ -437,8 +447,10 @@ function updatePageContent() {
     certSkills[16].textContent = t.skillsAppliedCanvasApps;
     certSkills[17].textContent = t.skillsAppliedPowerAutomate;
     certSkills[18].textContent = t.skillsAppliedAD;
-    certSkills[19].textContent = t.skillsGitHubCopilot;
-    certSkills[20].textContent = t.skillsGitHubFoundations;
+    certSkills[19].textContent = t.skillsAppliedCopilotStudio;
+    certSkills[20].textContent = t.skillsAppliedGitHubCopilotDev;
+    certSkills[21].textContent = t.skillsGitHubCopilot;
+    certSkills[22].textContent = t.skillsGitHubFoundations;
 
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
