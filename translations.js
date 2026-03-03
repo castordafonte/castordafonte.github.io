@@ -31,15 +31,28 @@ const translations = {
 
         // Experience Section
         experienceTitle: "Experiencia Laboral",
-        experienceDate: "Abril 2018 - Presente",
-        experienceRole: "Consultant",
         experienceCompany: "ARBENTIA",
-        experienceDescription: "Consultoría especializada en Microsoft Dynamics 365 y Microsoft Dynamics NAV, ayudando a empresas a implementar y optimizar sus sistemas ERP.",
-        experienceBullet1: "Implementación de Microsoft Dynamics 365 Business Central",
-        experienceBullet2: "Configuración y personalización de Microsoft Dynamics NAV",
-        experienceBullet3: "Desarrollo de soluciones con Power Platform",
-        experienceBullet4: "Consultoría en procesos de negocio y optimización ERP",
-        experienceBullet5: "Formación y soporte a usuarios finales",
+        // Role 1: Software Architect
+        exp1Date: "Mar 2026<br>Presente",
+        exp1Role: "Software Architect",
+        exp1Description: "Arquitectura de soluciones empresariales con IA, Business Central y Power Platform, liderando el diseño técnico de proyectos complejos.",
+        exp1Bullet1: "Diseño de arquitecturas de soluciones con IA y Business Central",
+        exp1Bullet2: "Liderazgo técnico en proyectos de integración empresarial",
+        exp1Bullet3: "Definición de estándares y mejores prácticas de desarrollo",
+        // Role 2: Senior Consultant
+        exp2Date: "Mar 2022 - Feb 2026",
+        exp2Role: "Senior Consultant",
+        exp2Description: "Consultoría avanzada en Business Central y Microsoft Dynamics NAV, gestionando proyectos de implementación de principio a fin.",
+        exp2Bullet1: "Gestión y liderazgo de proyectos de implementación ERP",
+        exp2Bullet2: "Consultoría avanzada en Business Central y Dynamics NAV",
+        exp2Bullet3: "Desarrollo de integraciones y soluciones personalizadas",
+        // Role 3: Consultant
+        exp3Date: "Jun 2018 - Feb 2022",
+        exp3Role: "Consultant",
+        exp3Description: "Consultoría especializada en Microsoft Dynamics 365 y Microsoft Dynamics NAV, ayudando a empresas a implementar y optimizar sus sistemas ERP.",
+        exp3Bullet1: "Implementación de Microsoft Dynamics 365 Business Central",
+        exp3Bullet2: "Configuración y personalización de Microsoft Dynamics NAV",
+        exp3Bullet3: "Desarrollo de soluciones con Power Platform",
 
         // Education Section
         educationTitle: "Educación",
@@ -165,15 +178,28 @@ const translations = {
 
         // Experience Section
         experienceTitle: "Work Experience",
-        experienceDate: "April 2018 - Present",
-        experienceRole: "Consultant",
         experienceCompany: "ARBENTIA",
-        experienceDescription: "Specialized consulting in Microsoft Dynamics 365 and Microsoft Dynamics NAV, helping companies implement and optimize their ERP systems.",
-        experienceBullet1: "Implementation of Microsoft Dynamics 365 Business Central",
-        experienceBullet2: "Configuration and customization of Microsoft Dynamics NAV",
-        experienceBullet3: "Development of solutions with Power Platform",
-        experienceBullet4: "Business process consulting and ERP optimization",
-        experienceBullet5: "Training and support for end users",
+        // Role 1: Software Architect
+        exp1Date: "Mar 2026<br>Present",
+        exp1Role: "Software Architect",
+        exp1Description: "Enterprise solution architecture with AI, Business Central and Power Platform, leading the technical design of complex projects.",
+        exp1Bullet1: "Solution architecture design with AI and Business Central",
+        exp1Bullet2: "Technical leadership in enterprise integration projects",
+        exp1Bullet3: "Definition of development standards and best practices",
+        // Role 2: Senior Consultant
+        exp2Date: "Mar 2022 - Feb 2026",
+        exp2Role: "Senior Consultant",
+        exp2Description: "Advanced consulting in Business Central and Microsoft Dynamics NAV, managing end-to-end implementation projects.",
+        exp2Bullet1: "ERP implementation project management and leadership",
+        exp2Bullet2: "Advanced consulting in Business Central and Dynamics NAV",
+        exp2Bullet3: "Development of integrations and custom solutions",
+        // Role 3: Consultant
+        exp3Date: "Jun 2018 - Feb 2022",
+        exp3Role: "Consultant",
+        exp3Description: "Specialized consulting in Microsoft Dynamics 365 and Microsoft Dynamics NAV, helping companies implement and optimize their ERP systems.",
+        exp3Bullet1: "Implementation of Microsoft Dynamics 365 Business Central",
+        exp3Bullet2: "Configuration and customization of Microsoft Dynamics NAV",
+        exp3Bullet3: "Development of solutions with Power Platform",
 
         // Education Section
         educationTitle: "Education",
@@ -349,16 +375,22 @@ function updatePageContent() {
 
     // Experience
     document.querySelector('#experiencia .section-title').textContent = t.experienceTitle;
-    document.querySelector('.timeline-date').textContent = t.experienceDate;
-    document.querySelector('.timeline-content h3').textContent = t.experienceRole;
-    document.querySelector('.timeline-content h4').textContent = t.experienceCompany;
-    document.querySelector('.timeline-content p').textContent = t.experienceDescription;
-    const expBullets = document.querySelectorAll('.timeline-content ul li');
-    expBullets[0].textContent = t.experienceBullet1;
-    expBullets[1].textContent = t.experienceBullet2;
-    expBullets[2].textContent = t.experienceBullet3;
-    expBullets[3].textContent = t.experienceBullet4;
-    expBullets[4].textContent = t.experienceBullet5;
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const expRoles = [
+        { date: t.exp1Date, role: t.exp1Role, desc: t.exp1Description, bullets: [t.exp1Bullet1, t.exp1Bullet2, t.exp1Bullet3] },
+        { date: t.exp2Date, role: t.exp2Role, desc: t.exp2Description, bullets: [t.exp2Bullet1, t.exp2Bullet2, t.exp2Bullet3] },
+        { date: t.exp3Date, role: t.exp3Role, desc: t.exp3Description, bullets: [t.exp3Bullet1, t.exp3Bullet2, t.exp3Bullet3] }
+    ];
+    timelineItems.forEach((item, i) => {
+        if (expRoles[i]) {
+            item.querySelector('.timeline-date').innerHTML = expRoles[i].date;
+            item.querySelector('.timeline-content h3').textContent = expRoles[i].role;
+            item.querySelector('.timeline-content h4').textContent = t.experienceCompany;
+            item.querySelector('.timeline-content p').textContent = expRoles[i].desc;
+            const bullets = item.querySelectorAll('.timeline-content ul li');
+            expRoles[i].bullets.forEach((b, j) => { if (bullets[j]) bullets[j].textContent = b; });
+        }
+    });
 
     // Education
     document.querySelector('#educacion .section-title').textContent = t.educationTitle;
