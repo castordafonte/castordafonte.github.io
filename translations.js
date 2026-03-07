@@ -5,7 +5,7 @@ const translations = {
         metaTitle: "Castor Dafonte | Consultor Microsoft Dynamics 365 & Power Platform Expert",
         metaDescription: "Consultor especializado en Microsoft Dynamics 365 Business Central, Power Platform y Microsoft 365. Más de 6 años de experiencia en ARBENTIA con 12+ certificaciones Microsoft activas.",
         metaKeywords: "Castor Dafonte, Microsoft Dynamics 365, Business Central, Power Platform, Dynamics NAV, consultor ERP, Microsoft 365, Power Apps, Power Automate, Power BI, certificaciones Microsoft, Power Platform Solution Architect, Power Platform Developer, Power Platform Functional Consultant, Power Platform App Maker, Microsoft 365 Administrator Expert, Teams Administrator, Dynamics 365 Business Central Functional Consultant, Microsoft Certified Expert, Microsoft Certified Associate, certificado Microsoft España, MS-100, MS-101, Microsoft 365 Identity and Services, Microsoft 365 Mobility and Security, exámenes Microsoft aprobados",
-        
+
         // Navigation
         navHome: "Inicio",
         navAbout: "Sobre mí",
@@ -14,13 +14,13 @@ const translations = {
         navCertifications: "Certificaciones",
         navSkills: "Habilidades",
         navContact: "Contacto",
-        
+
         // Hero Section
         heroTitle: "Castor Dafonte",
         heroSubtitle: "Microsoft Dynamics 365 Consultant",
         heroDescription: "Consultor especializado en Microsoft Dynamics 365, Dynamics NAV y Power Platform. Experto certificado en soluciones empresariales Microsoft con amplia experiencia en Business Central.",
         heroButtonContact: "Contactar",
-        
+
         // About Section
         aboutTitle: "Sobre mí",
         aboutText1: "Con una base sólida en tecnologías Microsoft y habiendo obtenido diversas certificaciones, como las de Azure, Power Platform y Dynamics 365, mi carrera profesional ha evolucionado de manera significativa.",
@@ -28,7 +28,7 @@ const translations = {
         aboutStatYears: "Años de experiencia",
         aboutStatCerts: "Certificaciones Microsoft",
         aboutStatPlatforms: "Plataformas Microsoft",
-        
+
         // Experience Section
         experienceTitle: "Experiencia Laboral",
         experienceDate: "Abril 2018 - Presente",
@@ -40,27 +40,31 @@ const translations = {
         experienceBullet3: "Desarrollo de soluciones con Power Platform",
         experienceBullet4: "Consultoría en procesos de negocio y optimización ERP",
         experienceBullet5: "Formación y soporte a usuarios finales",
-        
+
         // Education Section
         educationTitle: "Educación",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
         educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
         educationEnglishTitle: "Nivel de inglés",
-    educationEnglishDate: "B2",
-    educationEnglishCurrent: "Actualmente cursando el nivel C1",
-        
+        educationEnglishDate: "B2",
+        educationEnglishCurrent: "Actualmente cursando el nivel C1",
+
         // Certifications Section
         certificationsTitle: "Certificaciones Microsoft",
         certificationsSubtitle: "Haz clic en cada certificación para ver la verificación oficial de Microsoft Learn",
+        certLevelAIBusiness: "🤖 AI Expert",
         certLevelExpert: "⭐⭐⭐ Expert Level",
         certLevelAssociate: "⭐⭐ Associate Level",
         certLevelFundamentals: "⭐ Fundamentals",
         certLevelOther: "Otras Certificaciones",
         certVerifyLink: "Verificar certificación",
         certInfoLink: "Información del examen",
-        
+
         // Certification Names
+        certAIBusiness: "AI Business Professional",
+        certTransformAIBC: "Transform AI with Business Central - Proficient",
+        certAzureMigrate: "Azure: Migrate and Modernize - Proficient",
         certPPSolutionArchitect: "Power Platform Solution Architect Expert",
         certM365Admin: "Microsoft 365 Administrator Expert",
         certD365BC: "Dynamics 365 Business Central Functional Consultant Associate",
@@ -80,7 +84,7 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Crear y gestionar aplicaciones canvas con Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Crear y gestionar procesos automatizados con Power Automate",
         certAppliedAD: "Applied Skills: Administrar Active Directory Domain Services",
-        
+
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
         skillsM365Admin: "Tenant-level implementation • Microsoft 365 workloads • Identity management",
@@ -102,7 +106,10 @@ const translations = {
         skillsAppliedCanvasApps: "Diseño de aplicaciones canvas • Desarrollo Power Apps • Gestión de apps",
         skillsAppliedPowerAutomate: "Automatización de flujos • Power Automate • Optimización de procesos",
         skillsAppliedAD: "Gestión Active Directory • Domain Services • Administración de usuarios y grupos",
-        
+        skillsAIBusiness: "Estrategia de IA • Soluciones IA para negocios • IA responsable • Herramientas de IA Microsoft",
+        skillsTransformAIBC: "IA en Business Central • Funciones Copilot • Procesos empresariales con IA • Automatización inteligente",
+        skillsAzureMigrate: "Migración Azure • Modernización cloud • Optimización de infraestructura • Servicios Azure",
+
         // Skills Section
         skillsTitle: "Habilidades Técnicas",
         skillCat1: "Microsoft Dynamics 365",
@@ -111,7 +118,7 @@ const translations = {
         skillCat4: "Seguridad & Identidad",
         skillCat5: "Desarrollo & Herramientas",
         skillCat6: "Consultoría",
-        
+
         // Contact Section
         contactTitle: "Contacto",
         contactSubtitle: "¡Hablemos!",
@@ -121,7 +128,7 @@ const translations = {
         contactFormSubject: "Asunto",
         contactFormMessage: "Tu mensaje",
         contactFormButton: "Enviar Mensaje",
-        
+
         // Footer
         footerCopyright: "© 2025 Castor Dafonte. Todos los derechos reservados."
     },
@@ -130,7 +137,7 @@ const translations = {
         metaTitle: "Castor Dafonte | Microsoft Dynamics 365 & Power Platform Expert Consultant",
         metaDescription: "Consultant specialized in Microsoft Dynamics 365 Business Central, Power Platform and Microsoft 365. Over 6 years of experience at ARBENTIA with 12+ active Microsoft certifications.",
         metaKeywords: "Castor Dafonte, Microsoft Dynamics 365, Business Central, Power Platform, Dynamics NAV, ERP consultant, Microsoft 365, Power Apps, Power Automate, Power BI, Microsoft certifications, Power Platform Solution Architect, Power Platform Developer, Power Platform Functional Consultant, Power Platform App Maker, Microsoft 365 Administrator Expert, Teams Administrator, Dynamics 365 Business Central Functional Consultant, Microsoft Certified Expert, Microsoft Certified Associate, Microsoft certified Spain, MS-100, MS-101, Microsoft 365 Identity and Services, Microsoft 365 Mobility and Security, Microsoft exams passed",
-        
+
         // Navigation
         navHome: "Home",
         navAbout: "About",
@@ -139,13 +146,13 @@ const translations = {
         navCertifications: "Certifications",
         navSkills: "Skills",
         navContact: "Contact",
-        
+
         // Hero Section
         heroTitle: "Castor Dafonte",
         heroSubtitle: "Microsoft Dynamics 365 Consultant",
         heroDescription: "Consultant specialized in Microsoft Dynamics 365, Dynamics NAV and Power Platform. Certified expert in Microsoft enterprise solutions with extensive experience in Business Central.",
         heroButtonContact: "Contact",
-        
+
         // About Section
         aboutTitle: "About Me",
         aboutText1: "With a solid foundation in Microsoft technologies and having obtained various certifications, such as Azure, Power Platform and Dynamics 365, my professional career has evolved significantly.",
@@ -153,7 +160,7 @@ const translations = {
         aboutStatYears: "Years of experience",
         aboutStatCerts: "Microsoft Certifications",
         aboutStatPlatforms: "Microsoft Platforms",
-        
+
         // Experience Section
         experienceTitle: "Work Experience",
         experienceDate: "April 2018 - Present",
@@ -165,19 +172,20 @@ const translations = {
         experienceBullet3: "Development of solutions with Power Platform",
         experienceBullet4: "Business process consulting and ERP optimization",
         experienceBullet5: "Training and support for end users",
-        
+
         // Education Section
         educationTitle: "Education",
         educationSchool: "CIFP A Carballeira - Marcos Valcárcel",
         educationDate: "2016 - 2018",
         educationDescription: "Training in information technology and software development.",
         educationEnglishTitle: "English level",
-    educationEnglishDate: "B2",
-    educationEnglishCurrent: "Currently studying C1 level",
-        
+        educationEnglishDate: "B2",
+        educationEnglishCurrent: "Currently studying C1 level",
+
         // Certifications Section
         certificationsTitle: "Microsoft Certifications",
         certificationsSubtitle: "Click on each certification to see the official Microsoft Learn verification",
+        certLevelAIBusiness: "🤖 AI Expert",
         certLevelExpert: "⭐⭐⭐ Expert Level",
         certLevelAssociate: "⭐⭐ Associate Level",
         certLevelFundamentals: "⭐ Fundamentals",
@@ -185,8 +193,11 @@ const translations = {
         certOtherSubtitle: "Individual exams that are part of broader certifications",
         certVerifyLink: "Verify certification",
         certInfoLink: "Exam information",
-        
+
         // Certification Names
+        certAIBusiness: "AI Business Professional",
+        certTransformAIBC: "Transform AI with Business Central - Proficient",
+        certAzureMigrate: "Azure: Migrate and Modernize - Proficient",
         certPPSolutionArchitect: "Power Platform Solution Architect Expert",
         certM365Admin: "Microsoft 365 Administrator Expert",
         certD365BC: "Dynamics 365 Business Central Functional Consultant Associate",
@@ -206,7 +217,7 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Create and Manage Canvas Apps with Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Create and Manage Automated Processes with Power Automate",
         certAppliedAD: "Applied Skills: Administer Active Directory Domain Services",
-        
+
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
         skillsM365Admin: "Tenant-level implementation • Microsoft 365 workloads • Identity management",
@@ -229,7 +240,10 @@ const translations = {
         skillsAppliedCanvasApps: "Canvas apps design • Power Apps development • App management",
         skillsAppliedPowerAutomate: "Workflow automation • Power Automate flows • Process optimization",
         skillsAppliedAD: "Active Directory management • Domain Services • User & group administration",
-        
+        skillsAIBusiness: "AI strategy • AI solutions for business • Responsible AI • Microsoft AI tools",
+        skillsTransformAIBC: "AI in Business Central • Copilot features • AI-driven business processes • Intelligent automation",
+        skillsAzureMigrate: "Azure migration • Cloud modernization • Infrastructure optimization • Azure services",
+
         // Skills Section
         skillsTitle: "Technical Skills",
         skillCat1: "Microsoft Dynamics 365",
@@ -238,7 +252,7 @@ const translations = {
         skillCat4: "Security & Identity",
         skillCat5: "Development & Tools",
         skillCat6: "Consulting",
-        
+
         // Contact Section
         contactTitle: "Contact",
         contactSubtitle: "Let's Talk!",
@@ -248,7 +262,7 @@ const translations = {
         contactFormSubject: "Subject",
         contactFormMessage: "Your message",
         contactFormButton: "Send Message",
-        
+
         // Footer
         footerCopyright: "© 2025 Castor Dafonte. All rights reserved."
     }
@@ -270,12 +284,12 @@ let currentLang = getLanguageFromURL() || localStorage.getItem('preferredLanguag
 function switchLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('preferredLanguage', lang);
-    
+
     // Update URL without reload
     const url = new URL(window.location);
     url.searchParams.set('lang', lang);
     window.history.pushState({}, '', url);
-    
+
     updatePageContent();
     updateLanguageButtons();
     updateMetaTags();
@@ -295,7 +309,7 @@ function updateMetaTags() {
     document.querySelector('meta[name="description"]').content = t.metaDescription;
     document.querySelector('meta[name="keywords"]').content = t.metaKeywords;
     document.querySelector('meta[name="language"]').content = currentLang === 'es' ? 'Spanish' : 'English';
-    
+
     // Update Open Graph
     document.querySelector('meta[property="og:title"]').content = t.metaTitle;
     document.querySelector('meta[property="og:description"]').content = t.metaDescription;
@@ -305,7 +319,7 @@ function updateMetaTags() {
 
 function updatePageContent() {
     const t = translations[currentLang];
-    
+
     // Navigation (sin "Inicio" porque ahora es el logo)
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks[0].textContent = t.navAbout;
@@ -314,13 +328,13 @@ function updatePageContent() {
     navLinks[3].textContent = t.navCertifications;
     navLinks[4].textContent = t.navSkills;
     navLinks[5].textContent = t.navContact;
-    
+
     // Hero
     document.querySelector('.hero-title').textContent = t.heroTitle;
     document.querySelector('.hero-subtitle').textContent = t.heroSubtitle;
     document.querySelector('.hero-description').textContent = t.heroDescription;
     document.querySelector('.hero-buttons .btn-primary').textContent = t.heroButtonContact;
-    
+
     // About
     document.querySelector('#sobre-mi .section-title').textContent = t.aboutTitle;
     const aboutTexts = document.querySelectorAll('#sobre-mi .about-text p');
@@ -329,7 +343,7 @@ function updatePageContent() {
     document.querySelectorAll('.stat-label')[0].textContent = t.aboutStatYears;
     document.querySelectorAll('.stat-label')[1].textContent = t.aboutStatCerts;
     document.querySelectorAll('.stat-label')[2].textContent = t.aboutStatPlatforms;
-    
+
     // Experience
     document.querySelector('#experiencia .section-title').textContent = t.experienceTitle;
     document.querySelector('.timeline-date').textContent = t.experienceDate;
@@ -342,7 +356,7 @@ function updatePageContent() {
     expBullets[2].textContent = t.experienceBullet3;
     expBullets[3].textContent = t.experienceBullet4;
     expBullets[4].textContent = t.experienceBullet5;
-    
+
     // Education
     document.querySelector('#educacion .section-title').textContent = t.educationTitle;
     const educationItems = document.querySelectorAll('.education-item');
@@ -369,70 +383,79 @@ function updatePageContent() {
         if (englishStudying) englishStudying.textContent = t.educationEnglishCurrent;
     }
 
-    
+
     // Certifications
     document.querySelector('#certificaciones .section-title').textContent = t.certificationsTitle;
     document.querySelector('#certificaciones > .container > p').textContent = t.certificationsSubtitle;
     const certLevelTitles = document.querySelectorAll('.cert-level-title');
-    certLevelTitles[0].textContent = t.certLevelExpert;
-    certLevelTitles[1].textContent = t.certLevelAssociate;
-    certLevelTitles[2].textContent = t.certLevelFundamentals;
-    certLevelTitles[3].textContent = t.certLevelOther;
-    
+    certLevelTitles[0].textContent = t.certLevelAIBusiness;
+    certLevelTitles[1].textContent = t.certLevelExpert;
+    certLevelTitles[2].textContent = t.certLevelAssociate;
+    certLevelTitles[3].textContent = t.certLevelFundamentals;
+    certLevelTitles[4].textContent = t.certLevelOther;
+
     // Certification cards
     const certCards = document.querySelectorAll('.cert-card h4');
-    certCards[0].textContent = t.certPPSolutionArchitect;
-    certCards[1].textContent = t.certM365Admin;
-    certCards[2].textContent = t.certD365BC;
-    certCards[3].textContent = t.certPPDeveloper;
-    certCards[4].textContent = t.certPPFunctional;
-    certCards[5].textContent = t.certPPAppMaker;
-    certCards[6].textContent = t.certM365Teams;
-    certCards[7].textContent = t.certAzureAI;
-    certCards[8].textContent = t.certAzureData;
-    certCards[9].textContent = t.certAzure;
-    certCards[10].textContent = t.certPPFund;
-    certCards[11].textContent = t.certD365Fund;
-    certCards[12].textContent = t.certSecurity;
-    certCards[13].textContent = t.certMS100;
-    certCards[14].textContent = t.certMS101;
-    certCards[15].textContent = t.certAppliedCanvasApps;
-    certCards[16].textContent = t.certAppliedPowerAutomate;
-    certCards[17].textContent = t.certAppliedAD;
-    
+    certCards[0].textContent = t.certAIBusiness;
+    certCards[1].textContent = t.certTransformAIBC;
+    certCards[2].textContent = t.certAzureMigrate;
+    certCards[5].textContent = t.certPPSolutionArchitect;
+    certCards[6].textContent = t.certM365Admin;
+    certCards[7].textContent = t.certD365BC;
+    certCards[8].textContent = t.certD365BCDev;
+    certCards[9].textContent = t.certPPDeveloper;
+    certCards[10].textContent = t.certPPFunctional;
+    certCards[11].textContent = t.certPPAppMaker;
+    certCards[12].textContent = t.certM365Teams;
+    certCards[13].textContent = t.certAzureAI;
+    certCards[14].textContent = t.certAzureData;
+    certCards[15].textContent = t.certAzure;
+    certCards[16].textContent = t.certPPFund;
+    certCards[17].textContent = t.certD365Fund;
+    certCards[18].textContent = t.certSecurity;
+    certCards[19].textContent = t.certMS100;
+    certCards[20].textContent = t.certMS101;
+    certCards[21].textContent = t.certAppliedCanvasApps;
+    certCards[22].textContent = t.certAppliedPowerAutomate;
+    certCards[23].textContent = t.certAppliedAD;
+
     // Certification skills descriptions
     const certSkills = document.querySelectorAll('.cert-skills');
-    certSkills[0].textContent = t.skillsPPSolutionArchitect;
-    certSkills[1].textContent = t.skillsM365Admin;
-    certSkills[2].textContent = t.skillsD365BC;
-    certSkills[3].textContent = t.skillsPPDeveloper;
-    certSkills[4].textContent = t.skillsPPFunctional;
-    certSkills[5].textContent = t.skillsPPAppMaker;
-    certSkills[6].textContent = t.skillsM365Teams;
-    certSkills[7].textContent = t.skillsAzureAI;
-    certSkills[8].textContent = t.skillsAzureData;
-    certSkills[9].textContent = t.skillsAzure;
-    certSkills[10].textContent = t.skillsPPFund;
-    certSkills[11].textContent = t.skillsD365Fund;
-    certSkills[12].textContent = t.skillsSecurity;
-    certSkills[13].textContent = t.skillsMS100;
-    certSkills[14].textContent = t.skillsMS101;
-    certSkills[15].textContent = t.skillsAppliedCanvasApps;
-    certSkills[16].textContent = t.skillsAppliedPowerAutomate;
-    certSkills[17].textContent = t.skillsAppliedAD;
-    
+    certSkills[0].textContent = t.skillsAIBusiness;
+    certSkills[1].textContent = t.skillsTransformAIBC;
+    certSkills[2].textContent = t.skillsAzureMigrate;
+    certSkills[5].textContent = t.skillsPPSolutionArchitect;
+    certSkills[6].textContent = t.skillsM365Admin;
+    certSkills[7].textContent = t.skillsD365BC;
+    certSkills[8].textContent = t.skillsD365BCDev;
+    certSkills[9].textContent = t.skillsPPDeveloper;
+    certSkills[10].textContent = t.skillsPPFunctional;
+    certSkills[11].textContent = t.skillsPPAppMaker;
+    certSkills[12].textContent = t.skillsM365Teams;
+    certSkills[13].textContent = t.skillsAzureAI;
+    certSkills[14].textContent = t.skillsAzureData;
+    certSkills[15].textContent = t.skillsAzure;
+    certSkills[16].textContent = t.skillsPPFund;
+    certSkills[17].textContent = t.skillsD365Fund;
+    certSkills[18].textContent = t.skillsSecurity;
+    certSkills[19].textContent = t.skillsMS100;
+    certSkills[20].textContent = t.skillsMS101;
+    certSkills[21].textContent = t.skillsAppliedCanvasApps;
+    certSkills[22].textContent = t.skillsAppliedPowerAutomate;
+    certSkills[23].textContent = t.skillsAppliedAD;
+
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
         link.innerHTML = `<i class="fas fa-external-link-alt"></i> ${t.certVerifyLink}`;
     });
-    
+
     // Other certifications subtitle
     const certSection = document.querySelector('#certificaciones .container');
     const allParagraphs = certSection.querySelectorAll('p[style*="text-align: center"]');
     if (allParagraphs.length >= 2) {
         allParagraphs[1].textContent = t.certOtherSubtitle;
     }
-    
+
     // Skills
     document.querySelector('#habilidades .section-title').textContent = t.skillsTitle;
     const skillCategories = document.querySelectorAll('.skill-category h3');
@@ -442,31 +465,31 @@ function updatePageContent() {
     skillCategories[3].textContent = t.skillCat4;
     skillCategories[4].textContent = t.skillCat5;
     skillCategories[5].textContent = t.skillCat6;
-    
+
     // Contact
     document.querySelector('#contacto .section-title').textContent = t.contactTitle;
     document.querySelector('.contact-info h3').textContent = t.contactSubtitle;
     document.querySelector('.contact-info p').textContent = t.contactText;
-    
+
     // Contact form placeholders (EmailJS field names)
     const nameInput = document.querySelector('input[name="from_name"]');
     const emailInput = document.querySelector('input[name="reply_to"]');
     const subjectInput = document.querySelector('input[name="subject"]');
     const messageInput = document.querySelector('textarea[name="message"]');
     const submitBtn = document.querySelector('.contact-form button');
-    
+
     if (nameInput) nameInput.placeholder = t.contactFormName;
     if (emailInput) emailInput.placeholder = t.contactFormEmail;
     if (subjectInput) subjectInput.placeholder = t.contactFormSubject;
     if (messageInput) messageInput.placeholder = t.contactFormMessage;
     if (submitBtn) submitBtn.textContent = t.contactFormButton;
-    
+
     // Footer
     document.querySelector('.footer p').textContent = t.footerCopyright;
 }
 
 // Initialize language on page load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updatePageContent();
     updateLanguageButtons();
     updateMetaTags();
