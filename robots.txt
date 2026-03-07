@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://castordafonte.github.io/github-page-castordafonte/sitemap.xml
+Sitemap: https://castordafonte.github.io/sitemap.xml
 
 # Disallow archivos no públicos
 Disallow: /assets/images/*.md
