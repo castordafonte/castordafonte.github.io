@@ -31,15 +31,37 @@ const translations = {
 
         // Experience Section
         experienceTitle: "Experiencia Laboral",
-        experienceDate: "Abril 2018 - Presente",
-        experienceRole: "Consultant",
         experienceCompany: "ARBENTIA",
+<<<<<<< HEAD
         experienceDescription: "Consultoría especializada en Microsoft Dynamics 365 y Microsoft Dynamics NAV, ayudando a empresas a implementar y optimizar sus sistemas ERP.",
         experienceBullet1: "Implementación de Microsoft Dynamics 365 Business Central",
         experienceBullet2: "Configuración y personalización de Microsoft Dynamics NAV",
         experienceBullet3: "Desarrollo de soluciones con Power Platform",
         experienceBullet4: "Consultoría en procesos de negocio y optimización ERP",
         experienceBullet5: "Formación y soporte a usuarios finales",
+=======
+        // Role 1: Software Architect
+        exp1Date: "Mar 2026<br>Presente",
+        exp1Role: "Software Architect",
+        exp1Description: "Arquitectura de soluciones empresariales con IA, Business Central y Power Platform, liderando el diseño técnico de proyectos complejos.",
+        exp1Bullet1: "Diseño de arquitecturas de soluciones con IA y Business Central",
+        exp1Bullet2: "Liderazgo técnico en proyectos de integración empresarial",
+        exp1Bullet3: "Definición de estándares y mejores prácticas de desarrollo",
+        // Role 2: Senior Consultant
+        exp2Date: "Mar 2022 - Feb 2026",
+        exp2Role: "Senior Consultant",
+        exp2Description: "Consultoría avanzada en Business Central y Microsoft Dynamics NAV, gestionando proyectos de implementación de principio a fin.",
+        exp2Bullet1: "Gestión y liderazgo de proyectos de implementación ERP",
+        exp2Bullet2: "Consultoría avanzada en Business Central y Dynamics NAV",
+        exp2Bullet3: "Desarrollo de integraciones y soluciones personalizadas",
+        // Role 3: Consultant
+        exp3Date: "Jun 2018 - Feb 2022",
+        exp3Role: "Consultant",
+        exp3Description: "Consultoría especializada en Microsoft Dynamics 365 y Microsoft Dynamics NAV, ayudando a empresas a implementar y optimizar sus sistemas ERP.",
+        exp3Bullet1: "Implementación de Microsoft Dynamics 365 Business Central",
+        exp3Bullet2: "Configuración y personalización de Microsoft Dynamics NAV",
+        exp3Bullet3: "Desarrollo de soluciones con Power Platform",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Education Section
         educationTitle: "Educación",
@@ -84,6 +106,13 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Crear y gestionar aplicaciones canvas con Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Crear y gestionar procesos automatizados con Power Automate",
         certAppliedAD: "Applied Skills: Administrar Active Directory Domain Services",
+<<<<<<< HEAD
+=======
+        certAppliedCopilotStudio: "Applied Skills: Crear agentes en Microsoft Copilot Studio",
+        certAppliedGitHubCopilotDev: "Applied Skills: Acelerar el desarrollo de apps usando GitHub Copilot",
+        certGitHubCopilot: "GitHub Copilot",
+        certGitHubFoundations: "GitHub Foundations",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
@@ -106,9 +135,17 @@ const translations = {
         skillsAppliedCanvasApps: "Diseño de aplicaciones canvas • Desarrollo Power Apps • Gestión de apps",
         skillsAppliedPowerAutomate: "Automatización de flujos • Power Automate • Optimización de procesos",
         skillsAppliedAD: "Gestión Active Directory • Domain Services • Administración de usuarios y grupos",
+<<<<<<< HEAD
         skillsAIBusiness: "Estrategia de IA • Soluciones IA para negocios • IA responsable • Herramientas de IA Microsoft",
         skillsTransformAIBC: "IA en Business Central • Funciones Copilot • Procesos empresariales con IA • Automatización inteligente",
         skillsAzureMigrate: "Migración Azure • Modernización cloud • Optimización de infraestructura • Servicios Azure",
+=======
+        skillsAppliedCopilotStudio: "Copilot Studio • Agentes IA • IA conversacional • Automatización",
+        skillsAppliedGitHubCopilotDev: "GitHub Copilot • Desarrollo asistido por IA • Aceleración de código • Productividad",
+        skillsD365BCDev: "Desarrollo AL • Extensiones • Personalización Business Central • Integraciones",
+        skillsGitHubCopilot: "Codificación asistida por IA • Generación de código • Productividad del desarrollador",
+        skillsGitHubFoundations: "Fundamentos de Git • Colaboración en GitHub • Control de versiones",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Skills Section
         skillsTitle: "Habilidades Técnicas",
@@ -163,15 +200,37 @@ const translations = {
 
         // Experience Section
         experienceTitle: "Work Experience",
-        experienceDate: "April 2018 - Present",
-        experienceRole: "Consultant",
         experienceCompany: "ARBENTIA",
+<<<<<<< HEAD
         experienceDescription: "Specialized consulting in Microsoft Dynamics 365 and Microsoft Dynamics NAV, helping companies implement and optimize their ERP systems.",
         experienceBullet1: "Implementation of Microsoft Dynamics 365 Business Central",
         experienceBullet2: "Configuration and customization of Microsoft Dynamics NAV",
         experienceBullet3: "Development of solutions with Power Platform",
         experienceBullet4: "Business process consulting and ERP optimization",
         experienceBullet5: "Training and support for end users",
+=======
+        // Role 1: Software Architect
+        exp1Date: "Mar 2026<br>Present",
+        exp1Role: "Software Architect",
+        exp1Description: "Enterprise solution architecture with AI, Business Central and Power Platform, leading the technical design of complex projects.",
+        exp1Bullet1: "Solution architecture design with AI and Business Central",
+        exp1Bullet2: "Technical leadership in enterprise integration projects",
+        exp1Bullet3: "Definition of development standards and best practices",
+        // Role 2: Senior Consultant
+        exp2Date: "Mar 2022 - Feb 2026",
+        exp2Role: "Senior Consultant",
+        exp2Description: "Advanced consulting in Business Central and Microsoft Dynamics NAV, managing end-to-end implementation projects.",
+        exp2Bullet1: "ERP implementation project management and leadership",
+        exp2Bullet2: "Advanced consulting in Business Central and Dynamics NAV",
+        exp2Bullet3: "Development of integrations and custom solutions",
+        // Role 3: Consultant
+        exp3Date: "Jun 2018 - Feb 2022",
+        exp3Role: "Consultant",
+        exp3Description: "Specialized consulting in Microsoft Dynamics 365 and Microsoft Dynamics NAV, helping companies implement and optimize their ERP systems.",
+        exp3Bullet1: "Implementation of Microsoft Dynamics 365 Business Central",
+        exp3Bullet2: "Configuration and customization of Microsoft Dynamics NAV",
+        exp3Bullet3: "Development of solutions with Power Platform",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Education Section
         educationTitle: "Education",
@@ -217,6 +276,13 @@ const translations = {
         certAppliedCanvasApps: "Applied Skills: Create and Manage Canvas Apps with Power Apps",
         certAppliedPowerAutomate: "Applied Skills: Create and Manage Automated Processes with Power Automate",
         certAppliedAD: "Applied Skills: Administer Active Directory Domain Services",
+<<<<<<< HEAD
+=======
+        certAppliedCopilotStudio: "Applied Skills: Create agents in Microsoft Copilot Studio",
+        certAppliedGitHubCopilotDev: "Applied Skills: Accelerate app development by using GitHub Copilot",
+        certGitHubCopilot: "GitHub Copilot",
+        certGitHubFoundations: "GitHub Foundations",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Certification Skills Measured
         skillsPPSolutionArchitect: "Solution envisioning • Architecture design • Solution implementation",
@@ -240,9 +306,16 @@ const translations = {
         skillsAppliedCanvasApps: "Canvas apps design • Power Apps development • App management",
         skillsAppliedPowerAutomate: "Workflow automation • Power Automate flows • Process optimization",
         skillsAppliedAD: "Active Directory management • Domain Services • User & group administration",
+<<<<<<< HEAD
         skillsAIBusiness: "AI strategy • AI solutions for business • Responsible AI • Microsoft AI tools",
         skillsTransformAIBC: "AI in Business Central • Copilot features • AI-driven business processes • Intelligent automation",
         skillsAzureMigrate: "Azure migration • Cloud modernization • Infrastructure optimization • Azure services",
+=======
+        skillsAppliedCopilotStudio: "Copilot Studio • AI agents • Conversational AI • Automation",
+        skillsAppliedGitHubCopilotDev: "GitHub Copilot • AI-assisted development • Code acceleration • Productivity",
+        skillsGitHubCopilot: "AI-assisted coding • Code generation • Developer productivity",
+        skillsGitHubFoundations: "Git fundamentals • GitHub collaboration • Version control",
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
         // Skills Section
         skillsTitle: "Technical Skills",
@@ -346,6 +419,7 @@ function updatePageContent() {
 
     // Experience
     document.querySelector('#experiencia .section-title').textContent = t.experienceTitle;
+<<<<<<< HEAD
     document.querySelector('.timeline-date').textContent = t.experienceDate;
     document.querySelector('.timeline-content h3').textContent = t.experienceRole;
     document.querySelector('.timeline-content h4').textContent = t.experienceCompany;
@@ -356,6 +430,24 @@ function updatePageContent() {
     expBullets[2].textContent = t.experienceBullet3;
     expBullets[3].textContent = t.experienceBullet4;
     expBullets[4].textContent = t.experienceBullet5;
+=======
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const expRoles = [
+        { date: t.exp1Date, role: t.exp1Role, desc: t.exp1Description, bullets: [t.exp1Bullet1, t.exp1Bullet2, t.exp1Bullet3] },
+        { date: t.exp2Date, role: t.exp2Role, desc: t.exp2Description, bullets: [t.exp2Bullet1, t.exp2Bullet2, t.exp2Bullet3] },
+        { date: t.exp3Date, role: t.exp3Role, desc: t.exp3Description, bullets: [t.exp3Bullet1, t.exp3Bullet2, t.exp3Bullet3] }
+    ];
+    timelineItems.forEach((item, i) => {
+        if (expRoles[i]) {
+            item.querySelector('.timeline-date').innerHTML = expRoles[i].date;
+            item.querySelector('.timeline-content h3').textContent = expRoles[i].role;
+            item.querySelector('.timeline-content h4').textContent = t.experienceCompany;
+            item.querySelector('.timeline-content p').textContent = expRoles[i].desc;
+            const bullets = item.querySelectorAll('.timeline-content ul li');
+            expRoles[i].bullets.forEach((b, j) => { if (bullets[j]) bullets[j].textContent = b; });
+        }
+    });
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
     // Education
     document.querySelector('#educacion .section-title').textContent = t.educationTitle;
@@ -388,6 +480,7 @@ function updatePageContent() {
     document.querySelector('#certificaciones .section-title').textContent = t.certificationsTitle;
     document.querySelector('#certificaciones > .container > p').textContent = t.certificationsSubtitle;
     const certLevelTitles = document.querySelectorAll('.cert-level-title');
+<<<<<<< HEAD
     certLevelTitles[0].textContent = t.certLevelAIBusiness;
     certLevelTitles[1].textContent = t.certLevelExpert;
     certLevelTitles[2].textContent = t.certLevelAssociate;
@@ -443,6 +536,68 @@ function updatePageContent() {
     certSkills[21].textContent = t.skillsAppliedCanvasApps;
     certSkills[22].textContent = t.skillsAppliedPowerAutomate;
     certSkills[23].textContent = t.skillsAppliedAD;
+=======
+    certLevelTitles[0].textContent = t.certLevelExpert;
+    certLevelTitles[1].textContent = t.certLevelAssociate;
+    certLevelTitles[2].textContent = t.certLevelFundamentals;
+    certLevelTitles[3].textContent = t.certLevelOther;
+
+    // Certification cards - Total 23 cards:
+    // Expert (2): Solution Architect, M365 Admin
+    // Associate (6): D365BC Functional, D365BC Developer, PP Developer, PP Functional, PP App Maker, M365 Teams
+    // Fundamentals (6): Azure AI, Azure Data, Azure, Power Platform, D365 ERP, Security
+    // Other (9): MS-100, MS-101, Canvas Apps, Power Automate, AD, Copilot Studio, GitHub Copilot Dev, GitHub Copilot, GitHub Foundations
+    const certCards = document.querySelectorAll('.cert-card h4');
+    certCards[0].textContent = t.certPPSolutionArchitect;
+    certCards[1].textContent = t.certM365Admin;
+    certCards[2].textContent = t.certD365BC;
+    certCards[3].textContent = t.certD365BCDev;
+    certCards[4].textContent = t.certPPDeveloper;
+    certCards[5].textContent = t.certPPFunctional;
+    certCards[6].textContent = t.certPPAppMaker;
+    certCards[7].textContent = t.certM365Teams;
+    certCards[8].textContent = t.certAzureAI;
+    certCards[9].textContent = t.certAzureData;
+    certCards[10].textContent = t.certAzure;
+    certCards[11].textContent = t.certPPFund;
+    certCards[12].textContent = t.certD365Fund;
+    certCards[13].textContent = t.certSecurity;
+    certCards[14].textContent = t.certMS100;
+    certCards[15].textContent = t.certMS101;
+    certCards[16].textContent = t.certAppliedCanvasApps;
+    certCards[17].textContent = t.certAppliedPowerAutomate;
+    certCards[18].textContent = t.certAppliedAD;
+    certCards[19].textContent = t.certAppliedCopilotStudio;
+    certCards[20].textContent = t.certAppliedGitHubCopilotDev;
+    certCards[21].textContent = t.certGitHubCopilot;
+    certCards[22].textContent = t.certGitHubFoundations;
+
+    // Certification skills descriptions - match same order as cards above
+    const certSkills = document.querySelectorAll('.cert-skills');
+    certSkills[0].textContent = t.skillsPPSolutionArchitect;
+    certSkills[1].textContent = t.skillsM365Admin;
+    certSkills[2].textContent = t.skillsD365BC;
+    certSkills[3].textContent = t.skillsD365BCDev;
+    certSkills[4].textContent = t.skillsPPDeveloper;
+    certSkills[5].textContent = t.skillsPPFunctional;
+    certSkills[6].textContent = t.skillsPPAppMaker;
+    certSkills[7].textContent = t.skillsM365Teams;
+    certSkills[8].textContent = t.skillsAzureAI;
+    certSkills[9].textContent = t.skillsAzureData;
+    certSkills[10].textContent = t.skillsAzure;
+    certSkills[11].textContent = t.skillsPPFund;
+    certSkills[12].textContent = t.skillsD365Fund;
+    certSkills[13].textContent = t.skillsSecurity;
+    certSkills[14].textContent = t.skillsMS100;
+    certSkills[15].textContent = t.skillsMS101;
+    certSkills[16].textContent = t.skillsAppliedCanvasApps;
+    certSkills[17].textContent = t.skillsAppliedPowerAutomate;
+    certSkills[18].textContent = t.skillsAppliedAD;
+    certSkills[19].textContent = t.skillsAppliedCopilotStudio;
+    certSkills[20].textContent = t.skillsAppliedGitHubCopilotDev;
+    certSkills[21].textContent = t.skillsGitHubCopilot;
+    certSkills[22].textContent = t.skillsGitHubFoundations;
+>>>>>>> 68565041d088f6de912f17a9da873e4b7415fe2a
 
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
