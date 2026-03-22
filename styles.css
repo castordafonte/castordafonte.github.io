@@ -622,9 +622,15 @@ a, button, .nav-link, .btn, .cert-card, .skill-tag {
 .cert-badge {
     width: 80px;
     height: 80px;
+    display: block;
     object-fit: contain;
     margin-bottom: 1rem;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.cert-badge-ai-transformation {
+    width: 92px;
+    height: 92px;
 }
 
 .cert-info {
