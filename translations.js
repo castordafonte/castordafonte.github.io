@@ -17,14 +17,14 @@ const translations = {
 
         // Hero Section
         heroTitle: "Castor Dafonte",
-        heroSubtitle: "Microsoft Dynamics 365 Consultant",
-        heroDescription: "Consultor especializado en Microsoft Dynamics 365, Dynamics NAV y Power Platform. Experto certificado en soluciones empresariales Microsoft con amplia experiencia en Business Central.",
+        heroSubtitle: "Software Architect · Microsoft Dynamics 365 & AI",
+        heroDescription: "Software Architect especializado en Microsoft Dynamics 365 Business Central, Power Platform e Inteligencia Artificial. Más de 7 años diseñando soluciones empresariales Microsoft.",
         heroButtonContact: "Contactar",
 
         // About Section
         aboutTitle: "Sobre mí",
         aboutText1: "Con una base sólida en tecnologías Microsoft y habiendo obtenido diversas certificaciones, como las de Azure, Power Platform y Dynamics 365, mi carrera profesional ha evolucionado de manera significativa.",
-        aboutText2: "En ARBENTIA, llevo más de 6 años contribuyendo al éxito de nuestros clientes a través de soluciones innovadoras en Microsoft Power Platform y Dynamics 365. Mi enfoque está en habilitar entornos empresariales más eficientes y conectados, aprovechando mi competencia técnica y entendimiento profundo de Microsoft 365 para empoderar a las organizaciones hacia la transformación digital.",
+        aboutText2: "En ARBENTIA, llevo más de 7 años contribuyendo al éxito de nuestros clientes a través de soluciones innovadoras en Microsoft Power Platform y Dynamics 365. Mi enfoque está en habilitar entornos empresariales más eficientes y conectados, aprovechando mi competencia técnica y entendimiento profundo de Microsoft 365 para empoderar a las organizaciones hacia la transformación digital.",
         aboutStatYears: "Años de experiencia",
         aboutStatCerts: "Certificaciones Microsoft",
         aboutStatPlatforms: "Plataformas Microsoft",
@@ -66,10 +66,10 @@ const translations = {
         // Certifications Section
         certificationsTitle: "Certificaciones Microsoft",
         certificationsSubtitle: "Haz clic en cada certificación para ver la verificación oficial de Microsoft Learn",
-        certLevelAIBusiness: "🤖 AI Expert",
-        certLevelExpert: "⭐⭐⭐ Expert Level",
-        certLevelAssociate: "⭐⭐ Associate Level",
-        certLevelFundamentals: "⭐ Fundamentals",
+        certLevelAIBusiness: "AI Expert",
+        certLevelExpert: "Expert Level",
+        certLevelAssociate: "Associate Level",
+        certLevelFundamentals: "Fundamentals",
         certLevelOther: "Otras Certificaciones",
         certVerifyLink: "Verificar certificación",
         certInfoLink: "Información del examen",
@@ -156,7 +156,7 @@ const translations = {
         contactFormButton: "Enviar Mensaje",
 
         // Footer
-        footerCopyright: "© 2025 Castor Dafonte. Todos los derechos reservados."
+        footerCopyright: "© 2026 Castor Dafonte. Todos los derechos reservados."
     },
     en: {
         // Meta tags
@@ -175,14 +175,14 @@ const translations = {
 
         // Hero Section
         heroTitle: "Castor Dafonte",
-        heroSubtitle: "Microsoft Dynamics 365 Consultant",
-        heroDescription: "Consultant specialized in Microsoft Dynamics 365, Dynamics NAV and Power Platform. Certified expert in Microsoft enterprise solutions with extensive experience in Business Central.",
+        heroSubtitle: "Software Architect · Microsoft Dynamics 365 & AI",
+        heroDescription: "Software Architect specialized in Microsoft Dynamics 365 Business Central, Power Platform and Artificial Intelligence. Over 7 years designing Microsoft enterprise solutions.",
         heroButtonContact: "Contact",
 
         // About Section
         aboutTitle: "About Me",
         aboutText1: "With a solid foundation in Microsoft technologies and having obtained various certifications, such as Azure, Power Platform and Dynamics 365, my professional career has evolved significantly.",
-        aboutText2: "At ARBENTIA, I have been contributing to our clients' success for over 6 years through innovative solutions in Microsoft Power Platform and Dynamics 365. My focus is on enabling more efficient and connected business environments, leveraging my technical expertise and deep understanding of Microsoft 365 to empower organizations towards digital transformation.",
+        aboutText2: "At ARBENTIA, I have been contributing to our clients' success for over 7 years through innovative solutions in Microsoft Power Platform and Dynamics 365. My focus is on enabling more efficient and connected business environments, leveraging my technical expertise and deep understanding of Microsoft 365 to empower organizations towards digital transformation.",
         aboutStatYears: "Years of experience",
         aboutStatCerts: "Microsoft Certifications",
         aboutStatPlatforms: "Microsoft Platforms",
@@ -224,10 +224,10 @@ const translations = {
         // Certifications Section
         certificationsTitle: "Microsoft Certifications",
         certificationsSubtitle: "Click on each certification to see the official Microsoft Learn verification",
-        certLevelAIBusiness: "🤖 AI Expert",
-        certLevelExpert: "⭐⭐⭐ Expert Level",
-        certLevelAssociate: "⭐⭐ Associate Level",
-        certLevelFundamentals: "⭐ Fundamentals",
+        certLevelAIBusiness: "AI Expert",
+        certLevelExpert: "Expert Level",
+        certLevelAssociate: "Associate Level",
+        certLevelFundamentals: "Fundamentals",
         certLevelOther: "Other Certifications",
         certOtherSubtitle: "Individual exams that are part of broader certifications",
         certVerifyLink: "Verify certification",
@@ -315,7 +315,7 @@ const translations = {
         contactFormButton: "Send Message",
 
         // Footer
-        footerCopyright: "© 2025 Castor Dafonte. All rights reserved."
+        footerCopyright: "© 2026 Castor Dafonte. All rights reserved."
     }
 };
 
