@@ -194,7 +194,7 @@ scrollToTopBtn.style.cssText = `
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #007bff;
+    background: #0078D4;
     color: white;
     border: none;
     cursor: pointer;
