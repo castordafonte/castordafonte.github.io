@@ -603,6 +603,45 @@ a, button, .nav-link, .btn, .cert-card, .skill-tag {
     text-transform: uppercase;
 }
 
+.certifications-collapsible {
+    margin-top: 3rem;
+}
+
+.certifications-collapsible > summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.certifications-collapsible > summary::-webkit-details-marker {
+    display: none;
+}
+
+.certifications-collapsible > summary::after {
+    color: var(--color-primary);
+    content: '\f078';
+    font-family: "Font Awesome 6 Free";
+    font-size: 1rem;
+    font-weight: 900;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.05rem;
+    transition: transform 0.3s ease;
+}
+
+.certifications-collapsible[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+.certifications-collapsible .cert-level-title {
+    margin: 0 0 1.5rem;
+    padding-right: 3rem;
+}
+
+.certifications-collapsible:not([open]) .cert-level-title {
+    margin-bottom: 0;
+}
+
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

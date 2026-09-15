@@ -2,8 +2,8 @@
 const translations = {
     es: {
         // Meta tags
-        metaTitle: "Castor Dafonte | Consultor Microsoft Dynamics 365 & Power Platform Expert",
-        metaDescription: "Consultor especializado en Microsoft Dynamics 365 Business Central, Power Platform y Microsoft 365. Más de 6 años de experiencia en ARBENTIA con 27+ certificaciones y credenciales Microsoft activas.",
+        metaTitle: "Castor Dafonte | Software Architect | Dynamics 365 Business Central & Power Platform",
+        metaDescription: "Software Architect en Dynamics 365 Business Central y Power Platform. Más de 8 años diseñando, integrando y desplegando soluciones Microsoft.",
         metaKeywords: "Castor Dafonte, Microsoft Dynamics 365, Business Central, Power Platform, Dynamics NAV, consultor ERP, Microsoft 365, Power Apps, Power Automate, Power BI, certificaciones Microsoft, AI Transformation Leader, Agentic AI Business Solutions Architect, IA generativa, Agentic AI, Power Platform Solution Architect, Power Platform Developer, Power Platform Functional Consultant, Power Platform App Maker, Microsoft 365 Administrator Expert, Teams Administrator, Dynamics 365 Business Central Functional Consultant, Microsoft Certified Expert, Microsoft Certified Associate, certificado Microsoft España, MS-100, MS-101, Microsoft 365 Identity and Services, Microsoft 365 Mobility and Security, exámenes Microsoft aprobados",
 
         // Navigation
@@ -17,14 +17,14 @@ const translations = {
 
         // Hero Section
         heroTitle: "Castor Dafonte",
-        heroSubtitle: "Software Architect · Microsoft Dynamics 365 & AI",
-        heroDescription: "Software Architect especializado en Microsoft Dynamics 365 Business Central, Power Platform e Inteligencia Artificial. Más de 7 años diseñando soluciones empresariales Microsoft.",
+        heroSubtitle: "Software Architect | Dynamics 365 Business Central & Power Platform",
+        heroDescription: "Software Architect especializado en Dynamics 365 Business Central, Power Platform e Inteligencia Artificial. Más de 8 años diseñando soluciones empresariales Microsoft.",
         heroButtonContact: "Contactar",
 
         // About Section
         aboutTitle: "Sobre mí",
         aboutText1: "Con una base sólida en tecnologías Microsoft y habiendo obtenido diversas certificaciones, como las de Azure, Power Platform y Dynamics 365, mi carrera profesional ha evolucionado de manera significativa.",
-        aboutText2: "En ARBENTIA, llevo más de 7 años contribuyendo al éxito de nuestros clientes a través de soluciones innovadoras en Microsoft Power Platform y Dynamics 365. Mi enfoque está en habilitar entornos empresariales más eficientes y conectados, aprovechando mi competencia técnica y entendimiento profundo de Microsoft 365 para empoderar a las organizaciones hacia la transformación digital.",
+        aboutText2: "En ARBENTIA, llevo más de 8 años diseñando, integrando y desplegando soluciones empresariales con Dynamics 365 Business Central, Power Platform e IA. Combino arquitectura, desarrollo y automatización para modernizar procesos críticos de negocio.",
         aboutStatYears: "Años de experiencia",
         aboutStatCerts: "Certificaciones Microsoft",
         aboutStatPlatforms: "Plataformas Microsoft",
@@ -35,10 +35,10 @@ const translations = {
         // Role 1: Software Architect
         exp1Date: "Mar 2026<br>Presente",
         exp1Role: "Software Architect",
-        exp1Description: "Arquitectura de soluciones empresariales con IA, Business Central y Power Platform, liderando el diseño técnico de proyectos complejos.",
-        exp1Bullet1: "Diseño de arquitecturas de soluciones con IA y Business Central",
-        exp1Bullet2: "Liderazgo técnico en proyectos de integración empresarial",
-        exp1Bullet3: "Definición de estándares y mejores prácticas de desarrollo",
+        exp1Description: "Arquitectura de soluciones empresariales con Business Central, Power Platform e IA, desde la modernización del ERP hasta el despliegue y la operación.",
+        exp1Bullet1: "Migración de desarrollos C/AL a extensiones AL para Business Central",
+        exp1Bullet2: "Diseño de APIs e integraciones REST para procesos empresariales de alto volumen",
+        exp1Bullet3: "Automatización CI/CD en Azure DevOps y puesta en producción de agentes con Copilot Studio",
         // Role 2: Senior Consultant
         exp2Date: "Mar 2022 - Feb 2026",
         exp2Role: "Senior Consultant",
@@ -60,8 +60,7 @@ const translations = {
         educationDate: "2016 - 2018",
         educationDescription: "Formación en tecnologías de la información y desarrollo de software.",
         educationEnglishTitle: "Nivel de inglés",
-        educationEnglishDate: "B2",
-        educationEnglishCurrent: "Actualmente cursando el nivel C1",
+        educationEnglishDate: "B2 | C1 en curso",
 
         // Certifications Section
         certificationsTitle: "Certificaciones Microsoft",
@@ -160,8 +159,8 @@ const translations = {
     },
     en: {
         // Meta tags
-        metaTitle: "Castor Dafonte | Microsoft Dynamics 365 & Power Platform Expert Consultant",
-        metaDescription: "Consultant specialized in Microsoft Dynamics 365 Business Central, Power Platform and Microsoft 365. Over 6 years of experience at ARBENTIA with 27+ active Microsoft certifications and credentials.",
+        metaTitle: "Castor Dafonte | Software Architect | Dynamics 365 Business Central & Power Platform",
+        metaDescription: "Software Architect for Dynamics 365 Business Central and Power Platform. Over 8 years designing, integrating and deploying Microsoft solutions.",
         metaKeywords: "Castor Dafonte, Microsoft Dynamics 365, Business Central, Power Platform, Dynamics NAV, ERP consultant, Microsoft 365, Power Apps, Power Automate, Power BI, Microsoft certifications, AI Transformation Leader, Agentic AI Business Solutions Architect, generative AI, Agentic AI, Power Platform Solution Architect, Power Platform Developer, Power Platform Functional Consultant, Power Platform App Maker, Microsoft 365 Administrator Expert, Teams Administrator, Dynamics 365 Business Central Functional Consultant, Microsoft Certified Expert, Microsoft Certified Associate, Microsoft certified Spain, MS-100, MS-101, Microsoft 365 Identity and Services, Microsoft 365 Mobility and Security, Microsoft exams passed",
 
         // Navigation
@@ -175,14 +174,14 @@ const translations = {
 
         // Hero Section
         heroTitle: "Castor Dafonte",
-        heroSubtitle: "Software Architect · Microsoft Dynamics 365 & AI",
-        heroDescription: "Software Architect specialized in Microsoft Dynamics 365 Business Central, Power Platform and Artificial Intelligence. Over 7 years designing Microsoft enterprise solutions.",
+        heroSubtitle: "Software Architect | Dynamics 365 Business Central & Power Platform",
+        heroDescription: "Software Architect specialized in Dynamics 365 Business Central, Power Platform and Artificial Intelligence. Over 8 years designing Microsoft enterprise solutions.",
         heroButtonContact: "Contact",
 
         // About Section
         aboutTitle: "About Me",
         aboutText1: "With a solid foundation in Microsoft technologies and having obtained various certifications, such as Azure, Power Platform and Dynamics 365, my professional career has evolved significantly.",
-        aboutText2: "At ARBENTIA, I have been contributing to our clients' success for over 7 years through innovative solutions in Microsoft Power Platform and Dynamics 365. My focus is on enabling more efficient and connected business environments, leveraging my technical expertise and deep understanding of Microsoft 365 to empower organizations towards digital transformation.",
+        aboutText2: "At ARBENTIA, I have spent over 8 years designing, integrating and deploying enterprise solutions with Dynamics 365 Business Central, Power Platform and AI. I combine architecture, development and automation to modernize critical business processes.",
         aboutStatYears: "Years of experience",
         aboutStatCerts: "Microsoft Certifications",
         aboutStatPlatforms: "Microsoft Platforms",
@@ -193,10 +192,10 @@ const translations = {
         // Role 1: Software Architect
         exp1Date: "Mar 2026<br>Present",
         exp1Role: "Software Architect",
-        exp1Description: "Enterprise solution architecture with AI, Business Central and Power Platform, leading the technical design of complex projects.",
-        exp1Bullet1: "Solution architecture design with AI and Business Central",
-        exp1Bullet2: "Technical leadership in enterprise integration projects",
-        exp1Bullet3: "Definition of development standards and best practices",
+        exp1Description: "Enterprise solution architecture with Business Central, Power Platform and AI, from ERP modernization through deployment and operations.",
+        exp1Bullet1: "Migration of C/AL developments to AL extensions for Business Central",
+        exp1Bullet2: "Design of APIs and REST integrations for high-volume business processes",
+        exp1Bullet3: "CI/CD automation in Azure DevOps and production deployment of Copilot Studio agents",
         // Role 2: Senior Consultant
         exp2Date: "Mar 2022 - Feb 2026",
         exp2Role: "Senior Consultant",
@@ -218,8 +217,7 @@ const translations = {
         educationDate: "2016 - 2018",
         educationDescription: "Training in information technology and software development.",
         educationEnglishTitle: "English level",
-        educationEnglishDate: "B2",
-        educationEnglishCurrent: "Currently studying C1 level",
+        educationEnglishDate: "B2 | C1 in progress",
 
         // Certifications Section
         certificationsTitle: "Microsoft Certifications",
@@ -436,8 +434,6 @@ function updatePageContent() {
         if (englishTitle) englishTitle.textContent = t.educationEnglishTitle;
         const englishDate = educationItems[1].querySelector('.education-date');
         if (englishDate) englishDate.textContent = t.educationEnglishDate;
-        const englishStudying = educationItems[1].querySelector('.education-english-studying');
-        if (englishStudying) englishStudying.textContent = t.educationEnglishCurrent;
     }
 
 

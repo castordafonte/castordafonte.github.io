@@ -1,7 +1,7 @@
 {
   "name": "github-page-castordafonte",
   "version": "1.0.0",
-  "description": "Página web personal de Castor Dafonte - Consultor Microsoft Dynamics 365",
+  "description": "Página web personal de Castor Dafonte - Software Architect especializado en Dynamics 365 Business Central y Power Platform",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 8000",
