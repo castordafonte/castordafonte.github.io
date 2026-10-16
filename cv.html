@@ -9,31 +9,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --navy: #0b1120;
-            --navy-2: #141f36;
             --brand: #0f6cbd;
-            --brand-soft: #e5f1fb;
             --accent: #ff8c2a;
             --text: #0f1c2e;
             --text-2: #4a5a6e;
             --text-3: #7b8a9d;
             --border: #e3e8ef;
-            --bg-soft: #f4f7fb;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        @page { size: A4; margin: 0; }
+        @page { size: A4; margin: 16mm 18mm 18mm; }
 
         html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
         body {
             font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
-            font-size: 9.6pt;
-            line-height: 1.45;
+            font-size: 10pt;
+            line-height: 1.55;
             color: var(--text);
             background: #e9edf3;
             -webkit-font-smoothing: antialiased;
@@ -41,497 +38,314 @@
 
         a { color: var(--brand); text-decoration: none; }
 
-        .page {
+        .sheet {
             width: 210mm;
-            min-height: 297mm;
             margin: 10mm auto;
+            padding: 16mm 18mm 18mm;
             background: #fff;
             box-shadow: 0 10px 40px rgba(15, 28, 46, 0.15);
-            position: relative;
-            overflow: hidden;
         }
 
-        /* ---- Cabecera ---- */
+        /* Cabecera */
         .head {
             background:
                 radial-gradient(70% 90% at 100% 0%, rgba(15, 108, 189, 0.45), transparent 60%),
-                radial-gradient(50% 70% at 0% 100%, rgba(255, 140, 42, 0.28), transparent 60%),
+                radial-gradient(50% 70% at 0% 100%, rgba(255, 140, 42, 0.25), transparent 60%),
                 var(--navy);
             color: #fff;
-            padding: 13mm 14mm 10mm;
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 8mm;
-            align-items: end;
-        }
-
-        .head-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 8pt;
-            font-weight: 500;
-            color: #cfe3f7;
-            margin-bottom: 4mm;
-        }
-
-        .head-eyebrow::before {
-            content: '';
-            width: 7px; height: 7px; border-radius: 50%;
-            background: #22c55e;
+            border-radius: 4mm;
+            padding: 9mm 10mm 8mm;
+            margin-bottom: 8mm;
+            break-inside: avoid;
         }
 
         .name {
             font-family: 'Sora', sans-serif;
-            font-size: 26pt;
+            font-size: 24pt;
             font-weight: 800;
             letter-spacing: -0.03em;
-            line-height: 1;
-            margin-bottom: 2.5mm;
+            line-height: 1.05;
+            margin-bottom: 2mm;
         }
 
         .name span { color: #7fc0f5; }
 
         .role {
             font-family: 'Sora', sans-serif;
-            font-size: 12pt;
+            font-size: 11.5pt;
             font-weight: 600;
-            color: #fff;
-            margin-bottom: 2mm;
-        }
-
-        .tagline {
-            font-size: 9pt;
-            color: #a9b6c8;
-            max-width: 118mm;
+            margin-bottom: 3.5mm;
         }
 
         .contact {
-            list-style: none;
-            display: grid;
-            gap: 1.6mm;
-            font-size: 8.4pt;
-            color: #e6edf6;
-            min-width: 54mm;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5mm 6mm;
+            font-size: 8.8pt;
+            color: #cfe3f7;
         }
-
-        .contact li { display: flex; align-items: center; gap: 2.2mm; }
-
-        .contact svg { width: 11px; height: 11px; fill: #7fc0f5; flex-shrink: 0; }
 
         .contact a { color: #e6edf6; }
 
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            background: var(--navy-2);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
+        .contact span::before { content: '•'; color: var(--accent); margin-right: 2mm; }
 
-        .stat {
-            padding: 3.5mm 4mm;
-            text-align: center;
-            border-right: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .stat:last-child { border-right: 0; }
-
-        .stat b {
-            display: block;
-            font-family: 'Sora', sans-serif;
-            font-size: 15pt;
-            font-weight: 800;
-            color: #ffb067;
-            line-height: 1;
-            margin-bottom: 1mm;
-        }
-
-        .stat span { font-size: 7.4pt; color: #a9b6c8; text-transform: uppercase; letter-spacing: 0.06em; }
-
-        /* ---- Cuerpo ---- */
-        .body {
-            display: grid;
-            grid-template-columns: 1fr 60mm;
-            gap: 8mm;
-            padding: 8mm 14mm 10mm;
-        }
-
+        /* Secciones */
         h2 {
             font-family: 'Sora', sans-serif;
-            font-size: 9.2pt;
+            font-size: 9.5pt;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: var(--brand);
             display: flex;
             align-items: center;
-            gap: 2.5mm;
-            margin: 0 0 3.2mm;
+            gap: 3mm;
+            margin: 0 0 3.5mm;
+            break-after: avoid;
         }
 
-        h2::before {
-            content: '';
-            width: 7px; height: 7px; border-radius: 2px;
-            background: var(--accent);
-            transform: rotate(45deg);
-        }
+        h2::before { content: ''; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
 
         h2::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-        section { margin-bottom: 6.5mm; }
+        section { margin-bottom: 8mm; }
 
-        .profile p { color: var(--text-2); margin-bottom: 2mm; text-align: justify; }
+        p { color: var(--text-2); }
+
+        .profile p + p { margin-top: 2.5mm; }
 
         /* Experiencia */
-        .job { position: relative; padding-left: 5mm; margin-bottom: 4.5mm; }
+        .job { margin-bottom: 5.5mm; break-inside: avoid; }
 
-        .job::before {
-            content: '';
-            position: absolute; left: 0; top: 1.6mm;
-            width: 7px; height: 7px; border-radius: 50%;
-            background: var(--brand);
-            box-shadow: 0 0 0 2.5px var(--brand-soft);
-        }
+        .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6mm; }
 
-        .job::after {
-            content: '';
-            position: absolute; left: 3px; top: 5mm; bottom: -4mm;
-            width: 1px; background: var(--border);
-        }
+        .job h3 { font-family: 'Sora', sans-serif; font-size: 11pt; font-weight: 700; }
 
-        .job:last-child::after { display: none; }
+        .job .dates { font-size: 8.8pt; color: var(--text-3); white-space: nowrap; }
 
-        .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+        .job .company { font-size: 8.6pt; font-weight: 600; color: var(--brand); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1.5mm; }
 
-        .job h3 { font-family: 'Sora', sans-serif; font-size: 10.6pt; font-weight: 700; letter-spacing: -0.01em; }
+        .job p { margin-bottom: 1.5mm; }
 
-        .job .company { font-size: 8pt; font-weight: 700; color: var(--brand); text-transform: uppercase; letter-spacing: 0.08em; }
-
-        .job .dates { font-size: 8pt; color: var(--text-3); white-space: nowrap; font-weight: 500; }
-
-        .job p { color: var(--text-2); margin: 1.2mm 0 1.6mm; }
-
-        .job ul { padding-left: 4mm; color: var(--text-2); }
+        .job ul { padding-left: 4.5mm; color: var(--text-2); }
 
         .job li { margin-bottom: 0.8mm; }
 
         .job li::marker { color: var(--accent); }
 
-        /* Sidebar */
-        .side section { margin-bottom: 6mm; }
+        /* Habilidades y listas simples */
+        .rows { display: grid; gap: 1.6mm; }
 
-        .side .block {
-            background: var(--bg-soft);
-            border: 1px solid var(--border);
-            border-radius: 3mm;
-            padding: 3.5mm 4mm;
-        }
+        .row { display: grid; grid-template-columns: 42mm 1fr; gap: 4mm; break-inside: avoid; }
 
-        .skill-group { margin-bottom: 3mm; }
+        .row b { font-weight: 600; }
 
-        .skill-group h4 { font-size: 8.4pt; font-weight: 700; margin-bottom: 1.4mm; color: var(--text); }
+        .row span { color: var(--text-2); }
 
-        .tags { display: flex; flex-wrap: wrap; gap: 1.4mm; }
+        /* Formación */
+        .edu h3 { font-family: 'Sora', sans-serif; font-size: 11pt; font-weight: 700; }
 
-        .tag {
-            font-size: 7.4pt;
-            font-weight: 500;
-            padding: 0.9mm 2.2mm;
-            border-radius: 99px;
-            background: #fff;
-            border: 1px solid var(--border);
-            color: var(--text-2);
-        }
+        .edu .muted { font-size: 8.8pt; color: var(--text-3); margin: 0.6mm 0 1.2mm; }
 
-        .tag.hi { background: var(--brand); border-color: var(--brand); color: #fff; }
+        /* Certificaciones */
+        .cert-group { margin-bottom: 4.5mm; break-inside: avoid; }
 
-        .edu h4 { font-family: 'Sora', sans-serif; font-size: 9.4pt; font-weight: 700; }
-
-        .edu .muted { font-size: 8pt; color: var(--text-3); margin-top: 0.6mm; }
-
-        .edu p { color: var(--text-2); margin-top: 1mm; }
-
-        .lang { display: flex; justify-content: space-between; margin-bottom: 1.6mm; }
-
-        .lang b { font-weight: 600; }
-
-        .lang span { color: var(--text-2); }
-
-        .highlights { list-style: none; display: grid; gap: 1.6mm; }
-
-        .highlights li { display: flex; gap: 2mm; color: var(--text-2); }
-
-        .highlights li::before { content: '▸'; color: var(--accent); font-weight: 700; }
-
-        /* ---- Página 2: certificaciones ---- */
-        .page-2 { padding: 12mm 14mm 10mm; }
-
-        .page-2 .intro { color: var(--text-2); margin-bottom: 5mm; }
-
-        .cert-level {
-            display: flex; align-items: center; gap: 2.5mm;
+        .cert-group h3 {
             font-family: 'Sora', sans-serif;
-            font-size: 8.6pt; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 0.08em;
-            margin: 4mm 0 2.4mm;
+            font-size: 9pt;
+            font-weight: 700;
+            margin-bottom: 1.5mm;
+            display: flex;
+            align-items: center;
+            gap: 2mm;
         }
 
-        .cert-level::before { content: ''; width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg); background: var(--brand); }
-        .cert-level.l-expert::before { background: #c026d3; }
-        .cert-level.l-ai::before { background: var(--accent); }
-        .cert-level.l-fund::before { background: #16a34a; }
-        .cert-level.l-other::before { background: var(--text-3); }
-        .cert-level::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+        .cert-group h3 small { font-size: 8pt; font-weight: 500; color: var(--text-3); }
 
-        .cert-level .count {
-            font-size: 7.2pt; font-weight: 600; letter-spacing: 0;
-            padding: 0.4mm 1.8mm; border-radius: 99px;
-            background: var(--brand-soft); color: var(--brand);
+        .cert-group ul { list-style: none; }
+
+        .cert-group li {
+            display: flex;
+            justify-content: space-between;
+            gap: 6mm;
+            padding: 1.3mm 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
         }
 
-        .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 5mm; }
+        .cert-group li a { font-size: 8.4pt; font-weight: 600; white-space: nowrap; }
 
-        .cert {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 3mm;
-            align-items: start;
-            padding: 2mm 0;
-            border-bottom: 1px dashed var(--border);
-        }
-
-        .cert b { display: block; font-size: 8.8pt; font-weight: 600; }
-
-        .cert small { display: block; font-size: 7.4pt; color: var(--text-3); margin-top: 0.4mm; }
-
-        .cert a { font-size: 7.2pt; font-weight: 600; white-space: nowrap; padding-top: 0.6mm; }
-
-        .foot {
-            position: absolute; left: 14mm; right: 14mm; bottom: 7mm;
-            display: flex; justify-content: space-between;
-            font-size: 7.4pt; color: var(--text-3);
-            border-top: 1px solid var(--border); padding-top: 2.5mm;
-        }
+        .note { font-size: 8.4pt; color: var(--text-3); margin-top: 6mm; }
 
         @media print {
             body { background: #fff; }
-            .page { margin: 0; box-shadow: none; width: 210mm; height: 297mm; page-break-after: always; }
-            .page:last-child { page-break-after: auto; }
+            .sheet { width: auto; margin: 0; padding: 0; box-shadow: none; }
         }
 
         @media screen and (max-width: 760px) {
-            .page { width: 100%; min-height: auto; margin: 0; }
-            .head, .body { grid-template-columns: 1fr; }
-            .stats { grid-template-columns: repeat(2, 1fr); }
-            .certs { grid-template-columns: 1fr; }
-            .foot { position: static; margin: 6mm 14mm 0; }
+            .sheet { width: 100%; margin: 0; padding: 8mm 6mm; }
+            .job-head { flex-direction: column; gap: 0; }
+            .row { grid-template-columns: 1fr; gap: 0.5mm; }
         }
     </style>
 </head>
 <body>
+<div class="sheet">
 
-<!-- ============ PÁGINA 1 ============ -->
-<div class="page">
     <header class="head">
-        <div>
-            <span class="head-eyebrow">Software Architect en ARBENTIA · Vigo, España</span>
-            <h1 class="name">Castor <span>Dafonte</span> Gómez</h1>
-            <div class="role">Software Architect · Dynamics 365 Business Central &amp; Power Platform</div>
-            <p class="tagline">Más de 8 años diseñando, integrando y desplegando soluciones empresariales Microsoft. Arquitectura, desarrollo y automatización para modernizar procesos críticos de negocio con Business Central, Power Platform e IA.</p>
+        <h1 class="name">Castor <span>Dafonte</span> Gómez</h1>
+        <div class="role">Software Architect · Dynamics 365 Business Central &amp; Power Platform</div>
+        <div class="contact">
+            <a href="mailto:castordafonte@outlook.es">castordafonte@outlook.es</a>
+            <span>Vigo, España</span>
+            <span><a href="https://linkedin.com/in/castordafonte">linkedin.com/in/castordafonte</a></span>
+            <span><a href="https://github.com/castordafonte">github.com/castordafonte</a></span>
+            <span><a href="https://castordafonte.github.io">castordafonte.github.io</a></span>
         </div>
-        <ul class="contact">
-            <li><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg><a href="mailto:castordafonte@outlook.es">castordafonte@outlook.es</a></li>
-            <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Vigo, Galicia (España)</li>
-            <li><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.3 18v-7.7H5.7V18zM7 9.2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM18.3 18v-4.2c0-2.3-1.2-3.3-2.8-3.3-1.3 0-1.9.7-2.2 1.2v-1H10.7V18h2.6v-3.9c0-1 .2-2 1.5-2s1.3 1.2 1.3 2.1V18z"/></svg><a href="https://linkedin.com/in/castordafonte">linkedin.com/in/castordafonte</a></li>
-            <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg><a href="https://github.com/castordafonte">github.com/castordafonte</a></li>
-            <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 9h-2.8a15 15 0 0 0-1.3-5.4A8 8 0 0 1 18.9 11zM12 4c.9 1.3 1.7 3.8 1.9 7h-3.8c.2-3.2 1-5.7 1.9-7zM5.1 11a8 8 0 0 1 4.1-5.4A15 15 0 0 0 7.9 11zm0 2h2.8a15 15 0 0 0 1.3 5.4A8 8 0 0 1 5.1 13zM12 20c-.9-1.3-1.7-3.8-1.9-7h3.8c-.2 3.2-1 5.7-1.9 7zm2.8-1.6a15 15 0 0 0 1.3-5.4h2.8a8 8 0 0 1-4.1 5.4z"/></svg><a href="https://castordafonte.github.io">castordafonte.github.io</a></li>
-        </ul>
     </header>
 
-    <div class="stats">
-        <div class="stat"><b>8+</b><span>Años de experiencia</span></div>
-        <div class="stat"><b>27</b><span>Certificaciones Microsoft</span></div>
-        <div class="stat"><b>3</b><span>Certificaciones Expert</span></div>
-        <div class="stat"><b>5</b><span>Plataformas Microsoft</span></div>
-    </div>
+    <section class="profile">
+        <h2>Perfil</h2>
+        <p>Software Architect especializado en Dynamics 365 Business Central, Power Platform e Inteligencia Artificial. Más de 8 años en ARBENTIA diseñando, integrando y desplegando soluciones empresariales Microsoft, desde el análisis funcional con negocio hasta el despliegue y el soporte en producción.</p>
+        <p>Experiencia con todas las versiones de Dynamics NAV desde la 4.0 hasta Business Central SaaS: migraciones de C/AL a extensiones AL, integraciones REST de alto volumen, CI/CD en Azure DevOps y agentes con Copilot Studio. 27 certificaciones Microsoft, entre ellas Power Platform Solution Architect Expert y Agentic AI Business Solutions Architect.</p>
+    </section>
 
-    <div class="body">
-        <main>
-            <section class="profile">
-                <h2>Perfil</h2>
-                <p>Software Architect especializado en Dynamics 365 Business Central, Power Platform e Inteligencia Artificial. En ARBENTIA llevo más de 8 años diseñando, integrando y desplegando soluciones empresariales Microsoft, cubriendo desde el análisis funcional con negocio hasta el despliegue y el soporte en producción.</p>
-                <p>He trabajado con todas las versiones de Dynamics NAV desde la 4.0 hasta Business Central SaaS, liderando migraciones de C/AL a extensiones AL, integraciones REST de alto volumen, automatización CI/CD en Azure DevOps y la puesta en producción de agentes con Copilot Studio. Certificado como Power Platform Solution Architect Expert y Agentic AI Business Solutions Architect.</p>
-            </section>
+    <section>
+        <h2>Experiencia</h2>
 
-            <section>
-                <h2>Experiencia</h2>
+        <article class="job">
+            <div class="job-head">
+                <h3>Software Architect</h3>
+                <span class="dates">Mar 2026 · Actualidad</span>
+            </div>
+            <div class="company">ARBENTIA · Vigo</div>
+            <p>Arquitectura de soluciones empresariales con Business Central, Power Platform e IA, desde la modernización del ERP hasta el despliegue y la operación.</p>
+            <ul>
+                <li>Migración de desarrollos C/AL a extensiones AL para Business Central.</li>
+                <li>Diseño de APIs e integraciones REST para procesos empresariales de alto volumen.</li>
+                <li>Automatización CI/CD en Azure DevOps y puesta en producción de agentes con Copilot Studio.</li>
+            </ul>
+        </article>
 
-                <article class="job">
-                    <div class="job-head">
-                        <h3>Software Architect</h3>
-                        <span class="dates">Mar 2026 · Actualidad</span>
-                    </div>
-                    <span class="company">ARBENTIA · Vigo</span>
-                    <p>Arquitectura de soluciones empresariales con Business Central, Power Platform e IA, desde la modernización del ERP hasta el despliegue y la operación.</p>
-                    <ul>
-                        <li>Migración de desarrollos C/AL a extensiones AL para Business Central.</li>
-                        <li>Diseño de APIs e integraciones REST para procesos empresariales de alto volumen.</li>
-                        <li>Automatización CI/CD en Azure DevOps y puesta en producción de agentes con Copilot Studio.</li>
-                        <li>Definición de arquitectura, estándares de desarrollo y revisión técnica de soluciones.</li>
-                    </ul>
-                </article>
+        <article class="job">
+            <div class="job-head">
+                <h3>Senior Consultant</h3>
+                <span class="dates">Mar 2022 · Feb 2026</span>
+            </div>
+            <div class="company">ARBENTIA · Vigo</div>
+            <p>Responsable técnico de proyectos Business Central y Dynamics NAV de principio a fin.</p>
+            <ul>
+                <li>Liderazgo técnico de implantaciones y upgrades de Business Central en clientes de seguros, salud y retail.</li>
+                <li>Desarrollo de extensiones AL e integraciones REST con sistemas de facturación, CRM y BI.</li>
+                <li>Gestión de entornos productivos multiempresa y definición de procesos de despliegue.</li>
+            </ul>
+        </article>
 
-                <article class="job">
-                    <div class="job-head">
-                        <h3>Senior Consultant</h3>
-                        <span class="dates">Mar 2022 · Feb 2026</span>
-                    </div>
-                    <span class="company">ARBENTIA · Vigo</span>
-                    <p>Responsable técnico de proyectos Business Central y Dynamics NAV de principio a fin, desde el análisis funcional con negocio hasta el soporte en producción.</p>
-                    <ul>
-                        <li>Liderazgo técnico de implantaciones y upgrades de Business Central en clientes de seguros, salud y retail.</li>
-                        <li>Desarrollo de extensiones AL e integraciones REST con sistemas corporativos de facturación, CRM y BI.</li>
-                        <li>Gestión de entornos productivos multiempresa y definición de procesos de despliegue.</li>
-                    </ul>
-                </article>
+        <article class="job">
+            <div class="job-head">
+                <h3>Consultant</h3>
+                <span class="dates">Jun 2018 · Feb 2022</span>
+            </div>
+            <div class="company">ARBENTIA · Ourense</div>
+            <p>Consultoría especializada en Microsoft Dynamics 365 y Dynamics NAV para la implantación y optimización de sistemas ERP.</p>
+            <ul>
+                <li>Implantación y parametrización de Dynamics NAV y Business Central en proyectos multiempresa.</li>
+                <li>Desarrollo a medida en C/AL y AL: informes, workflows y adaptaciones funcionales.</li>
+                <li>Automatización de procesos y cuadros de mando con Power Platform y Power BI; scripting en PowerShell.</li>
+            </ul>
+        </article>
+    </section>
 
-                <article class="job">
-                    <div class="job-head">
-                        <h3>Consultant</h3>
-                        <span class="dates">Jun 2018 · Feb 2022</span>
-                    </div>
-                    <span class="company">ARBENTIA · Ourense</span>
-                    <p>Consultoría especializada en Microsoft Dynamics 365 y Dynamics NAV, ayudando a empresas a implementar y optimizar sus sistemas ERP.</p>
-                    <ul>
-                        <li>Implantación y parametrización de Dynamics NAV y Business Central en proyectos multiempresa.</li>
-                        <li>Desarrollo a medida en C/AL y AL: informes, workflows y adaptaciones funcionales.</li>
-                        <li>Automatización de procesos y cuadros de mando con Power Platform y Power BI; scripting en PowerShell.</li>
-                    </ul>
-                </article>
-            </section>
+    <section>
+        <h2>Habilidades</h2>
+        <div class="rows">
+            <div class="row"><b>Dynamics 365</b><span>Business Central, Dynamics NAV, AL, C/AL, arquitectura ERP</span></div>
+            <div class="row"><b>Power Platform</b><span>Power Apps (canvas y model-driven), Power Automate, Power BI, Dataverse</span></div>
+            <div class="row"><b>IA y automatización</b><span>Copilot Studio, Agentic AI, GitHub Copilot, PowerShell</span></div>
+            <div class="row"><b>Desarrollo y DevOps</b><span>Azure DevOps (CI/CD), REST APIs, Git, SQL Server, Visual Studio Code</span></div>
+            <div class="row"><b>Microsoft 365 y seguridad</b><span>Administración M365, Teams, Entra ID, Defender XDR, Purview</span></div>
+            <div class="row"><b>Consultoría</b><span>Arquitectura de soluciones, análisis de procesos de negocio, formación y soporte</span></div>
+        </div>
+    </section>
 
-            <section class="edu">
-                <h2>Formación</h2>
-                <h4>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h4>
-                <div class="muted">CIFP A Carballeira – Marcos Valcárcel · Ourense · Sep 2016 – Mar 2018</div>
-                <p>Formación en tecnologías de la información y desarrollo de software multiplataforma.</p>
-            </section>
-        </main>
+    <section class="edu">
+        <h2>Formación</h2>
+        <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+        <div class="muted">CIFP A Carballeira – Marcos Valcárcel · Ourense · Sep 2016 – Mar 2018</div>
+    </section>
 
-        <aside class="side">
-            <section>
-                <h2>Claves</h2>
-                <ul class="highlights">
-                    <li>Arquitectura de soluciones ERP end-to-end</li>
-                    <li>Integraciones REST y APIs de alto volumen</li>
-                    <li>CI/CD en Azure DevOps y agentes con Copilot Studio</li>
-                    <li>Migraciones NAV → Business Central SaaS</li>
-                </ul>
-            </section>
+    <section>
+        <h2>Idiomas</h2>
+        <div class="rows">
+            <div class="row"><b>Español y gallego</b><span>Nativo</span></div>
+            <div class="row"><b>Inglés</b><span>B2 · C1 en curso</span></div>
+        </div>
+    </section>
 
-            <section>
-                <h2>Habilidades</h2>
-                <div class="block">
-                    <div class="skill-group">
-                        <h4>Dynamics 365</h4>
-                        <div class="tags"><span class="tag hi">Business Central</span><span class="tag hi">AL</span><span class="tag">C/AL</span><span class="tag">Dynamics NAV</span><span class="tag">ERP</span></div>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Power Platform</h4>
-                        <div class="tags"><span class="tag hi">Power Apps</span><span class="tag hi">Power Automate</span><span class="tag">Power BI</span><span class="tag">Dataverse</span><span class="tag">Canvas / Model-driven</span></div>
-                    </div>
-                    <div class="skill-group">
-                        <h4>IA y automatización</h4>
-                        <div class="tags"><span class="tag hi">Copilot Studio</span><span class="tag">Agentic AI</span><span class="tag">GitHub Copilot</span><span class="tag">PowerShell</span></div>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Desarrollo y DevOps</h4>
-                        <div class="tags"><span class="tag hi">Azure DevOps</span><span class="tag">REST APIs</span><span class="tag">Git</span><span class="tag">SQL Server</span><span class="tag">VS Code</span></div>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Microsoft 365 y seguridad</h4>
-                        <div class="tags"><span class="tag">M365 Admin</span><span class="tag">Teams</span><span class="tag">Entra ID</span><span class="tag">Defender XDR</span><span class="tag">Purview</span></div>
-                    </div>
-                    <div class="skill-group" style="margin-bottom:0">
-                        <h4>Consultoría</h4>
-                        <div class="tags"><span class="tag">Solution Architecture</span><span class="tag">Business Process Analysis</span><span class="tag">Training &amp; Support</span></div>
-                    </div>
-                </div>
-            </section>
+    <section>
+        <h2>Certificaciones Microsoft</h2>
 
-            <section>
-                <h2>Idiomas</h2>
-                <div class="lang"><b>Español</b><span>Nativo</span></div>
-                <div class="lang"><b>Gallego</b><span>Nativo</span></div>
-                <div class="lang"><b>Inglés</b><span>B2 · C1 en curso</span></div>
-            </section>
-        </aside>
-    </div>
+        <div class="cert-group">
+            <h3>Expert <small>3</small></h3>
+            <ul>
+                <li>Power Platform Solution Architect Expert <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e">Verificar</a></li>
+                <li>Agentic AI Business Solutions Architect <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef">Verificar</a></li>
+                <li>Microsoft 365 Administrator Expert <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed">Verificar</a></li>
+            </ul>
+        </div>
 
-    <div class="foot">
-        <span>Castor Dafonte Gómez · Software Architect</span>
-        <span>Certificaciones Microsoft detalladas en la página 2 · castordafonte.github.io</span>
-    </div>
+        <div class="cert-group">
+            <h3>IA y Copilot <small>8</small></h3>
+            <ul>
+                <li>AI Business Professional <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43">Verificar</a></li>
+                <li>AI Transformation Leader <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f">Verificar</a></li>
+                <li>Transform AI with Business Central – Proficient <a href="https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0">Verificar</a></li>
+                <li>Azure: Migrate and Modernize – Proficient <a href="https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8">Verificar</a></li>
+                <li>Applied Skills: Create agents in Microsoft Copilot Studio <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/85db3afb8d773d21">Verificar</a></li>
+                <li>Applied Skills: Accelerate app development by using GitHub Copilot <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/caa407db3bd2dd8b">Verificar</a></li>
+                <li>GitHub Copilot <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/88e8d8db0d7d6349">Verificar</a></li>
+                <li>GitHub Foundations <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/636d0c5b30b515a1">Verificar</a></li>
+            </ul>
+        </div>
+
+        <div class="cert-group">
+            <h3>Associate <small>6</small></h3>
+            <ul>
+                <li>Dynamics 365 Business Central Functional Consultant Associate <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a">Verificar</a></li>
+                <li>Dynamics 365 Business Central Developer Associate <a href="https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/">Verificar</a></li>
+                <li>Power Platform Developer Associate <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce">Verificar</a></li>
+                <li>Power Platform Functional Consultant Associate <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03">Verificar</a></li>
+                <li>Power Platform App Maker Associate <a href="https://learn.microsoft.com/api/credentials/share/es-es/castordafonte/cf89b24ddb73795e">Verificar</a></li>
+                <li>Microsoft 365 Teams Administrator Associate <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85">Verificar</a></li>
+            </ul>
+        </div>
+
+        <div class="cert-group">
+            <h3>Fundamentals <small>6</small></h3>
+            <ul>
+                <li>Azure Fundamentals <a href="https://www.credly.com/earner/earned/badge/ebbf9b42-390f-446c-a773-a364b26a06a5">Verificar</a></li>
+                <li>Azure AI Fundamentals <a href="https://www.credly.com/earner/earned/badge/ed2f90c6-7791-418e-a770-0bca7056d5c2">Verificar</a></li>
+                <li>Azure Data Fundamentals <a href="https://www.credly.com/earner/earned/badge/5b9ba502-6586-45d3-8f25-4aa406970b55">Verificar</a></li>
+                <li>Power Platform Fundamentals <a href="https://www.credly.com/earner/earned/badge/a5ab3eb0-e36c-4ff1-9ba0-8a064c55f6de">Verificar</a></li>
+                <li>Dynamics 365 Fundamentals (ERP) <a href="https://www.credly.com/earner/earned/badge/48b49082-0755-474a-8b21-1c30305e1460">Verificar</a></li>
+                <li>Security, Compliance, and Identity Fundamentals <a href="https://www.credly.com/earner/earned/badge/b4c74d2a-4982-486d-be7a-ce14039734ac">Verificar</a></li>
+            </ul>
+        </div>
+
+        <div class="cert-group">
+            <h3>Otras credenciales <small>5</small></h3>
+            <ul>
+                <li>MS-100: Microsoft 365 Identity and Services <a href="https://www.credly.com/badges/ac07dc0b-dee6-4118-9adb-0324ed2e2175">Verificar</a></li>
+                <li>MS-101: Microsoft 365 Mobility and Security <a href="https://www.credly.com/badges/eb5ac741-57fb-4bc6-b62c-7387ec95d79a">Verificar</a></li>
+                <li>Applied Skills: Create and Manage Canvas Apps with Power Apps <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-manage-canvas-apps-power-apps">Verificar</a></li>
+                <li>Applied Skills: Create and Manage Automated Processes with Power Automate <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-and-manage-automated-processes-with-power-automate">Verificar</a></li>
+                <li>Applied Skills: Administer Active Directory Domain Services <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/administer-active-directory-domain-services">Verificar</a></li>
+            </ul>
+        </div>
+
+        <p class="note">Perfil completo de certificaciones en learn.microsoft.com/es-es/users/castordafonte</p>
+    </section>
+
 </div>
-
-<!-- ============ PÁGINA 2 ============ -->
-<div class="page page-2">
-    <h2>Certificaciones Microsoft</h2>
-    <p class="intro">27 certificaciones y credenciales Microsoft, con enlace de verificación oficial en Microsoft Learn o Credly.</p>
-
-    <div class="cert-level l-expert">Expert <span class="count">3</span></div>
-    <div class="certs">
-        <div class="cert"><div><b>Power Platform Solution Architect Expert</b><small>Solution envisioning · Architecture design · Implementation</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e">Verificar</a></div>
-        <div class="cert"><div><b>Agentic AI Business Solutions Architect</b><small>Plan, design and deploy AI-powered business solutions</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef">Verificar</a></div>
-        <div class="cert"><div><b>Microsoft 365 Administrator Expert</b><small>Tenant-level implementation · Workloads · Identity</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed">Verificar</a></div>
-    </div>
-
-    <div class="cert-level l-ai">IA y Copilot <span class="count">8</span></div>
-    <div class="certs">
-        <div class="cert"><div><b>AI Business Professional</b><small>Estrategia de IA · IA responsable · Herramientas de IA Microsoft</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43">Verificar</a></div>
-        <div class="cert"><div><b>AI Transformation Leader</b><small>Valor de la IA generativa · Estrategia de adopción</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f">Verificar</a></div>
-        <div class="cert"><div><b>Transform AI with Business Central – Proficient</b><small>IA y Copilot en Business Central · Automatización inteligente</small></div><a href="https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0">Verificar</a></div>
-        <div class="cert"><div><b>Azure: Migrate and Modernize – Proficient</b><small>Migración y modernización cloud en Azure</small></div><a href="https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8">Verificar</a></div>
-        <div class="cert"><div><b>Applied Skills: Create agents in Microsoft Copilot Studio</b><small>Agentes de IA · IA conversacional · Automatización</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/85db3afb8d773d21">Verificar</a></div>
-        <div class="cert"><div><b>Applied Skills: Accelerate app development by using GitHub Copilot</b><small>Desarrollo asistido por IA</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/caa407db3bd2dd8b">Verificar</a></div>
-        <div class="cert"><div><b>GitHub Copilot</b><small>AI-assisted coding · Developer productivity</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/88e8d8db0d7d6349">Verificar</a></div>
-        <div class="cert"><div><b>GitHub Foundations</b><small>Git · Colaboración en GitHub · Control de versiones</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/636d0c5b30b515a1">Verificar</a></div>
-    </div>
-
-    <div class="cert-level">Associate <span class="count">6</span></div>
-    <div class="certs">
-        <div class="cert"><div><b>Dynamics 365 Business Central Functional Consultant Associate</b><small>Setup · Financials · Sales &amp; purchasing · Operations</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a">Verificar</a></div>
-        <div class="cert"><div><b>Dynamics 365 Business Central Developer Associate</b><small>AL development · Extensions · Integrations</small></div><a href="https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/">Verificar</a></div>
-        <div class="cert"><div><b>Power Platform Developer Associate</b><small>Technical design · Platform extension · Integrations</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce">Verificar</a></div>
-        <div class="cert"><div><b>Power Platform Functional Consultant Associate</b><small>Dataverse · Power Apps · Automatización</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03">Verificar</a></div>
-        <div class="cert"><div><b>Power Platform App Maker Associate</b><small>Canvas apps · Model-driven apps · Flows · Power Pages</small></div><a href="https://learn.microsoft.com/api/credentials/share/es-es/castordafonte/cf89b24ddb73795e">Verificar</a></div>
-        <div class="cert"><div><b>Microsoft 365 Teams Administrator Associate</b><small>Teams · Chat &amp; channels · Meetings &amp; calling</small></div><a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85">Verificar</a></div>
-    </div>
-
-    <div class="cert-level l-fund">Fundamentals <span class="count">6</span></div>
-    <div class="certs">
-        <div class="cert"><div><b>Azure Fundamentals</b><small>Cloud concepts · Azure services · Security</small></div><a href="https://www.credly.com/earner/earned/badge/ebbf9b42-390f-446c-a773-a364b26a06a5">Verificar</a></div>
-        <div class="cert"><div><b>Azure AI Fundamentals</b><small>AI workloads · Machine learning · NLP</small></div><a href="https://www.credly.com/earner/earned/badge/ed2f90c6-7791-418e-a770-0bca7056d5c2">Verificar</a></div>
-        <div class="cert"><div><b>Azure Data Fundamentals</b><small>Data concepts · Relational &amp; non-relational data</small></div><a href="https://www.credly.com/earner/earned/badge/5b9ba502-6586-45d3-8f25-4aa406970b55">Verificar</a></div>
-        <div class="cert"><div><b>Power Platform Fundamentals</b><small>Power Apps · Power Automate · Power Pages</small></div><a href="https://www.credly.com/earner/earned/badge/a5ab3eb0-e36c-4ff1-9ba0-8a064c55f6de">Verificar</a></div>
-        <div class="cert"><div><b>Dynamics 365 Fundamentals (ERP)</b><small>Finance · Supply chain · Commerce</small></div><a href="https://www.credly.com/earner/earned/badge/48b49082-0755-474a-8b21-1c30305e1460">Verificar</a></div>
-        <div class="cert"><div><b>Security, Compliance, and Identity Fundamentals</b><small>Identity &amp; access · Threat protection · Compliance</small></div><a href="https://www.credly.com/earner/earned/badge/b4c74d2a-4982-486d-be7a-ce14039734ac">Verificar</a></div>
-    </div>
-
-    <div class="cert-level l-other">Otras credenciales <span class="count">5</span></div>
-    <div class="certs">
-        <div class="cert"><div><b>MS-100: Microsoft 365 Identity and Services</b><small>Identity &amp; services · Workloads configuration</small></div><a href="https://www.credly.com/badges/ac07dc0b-dee6-4118-9adb-0324ed2e2175">Verificar</a></div>
-        <div class="cert"><div><b>MS-101: Microsoft 365 Mobility and Security</b><small>Security · Device management · Data protection</small></div><a href="https://www.credly.com/badges/eb5ac741-57fb-4bc6-b62c-7387ec95d79a">Verificar</a></div>
-        <div class="cert"><div><b>Applied Skills: Create and Manage Canvas Apps with Power Apps</b><small>Diseño y gestión de canvas apps</small></div><a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-manage-canvas-apps-power-apps">Verificar</a></div>
-        <div class="cert"><div><b>Applied Skills: Create and Manage Automated Processes with Power Automate</b><small>Flujos y optimización de procesos</small></div><a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-and-manage-automated-processes-with-power-automate">Verificar</a></div>
-        <div class="cert"><div><b>Applied Skills: Administer Active Directory Domain Services</b><small>Active Directory · Usuarios y grupos</small></div><a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/administer-active-directory-domain-services">Verificar</a></div>
-    </div>
-
-    <div class="foot">
-        <span>Castor Dafonte Gómez · castordafonte@outlook.es</span>
-        <span>Perfil completo en learn.microsoft.com/es-es/users/castordafonte</span>
-    </div>
-</div>
-
 </body>
 </html>
