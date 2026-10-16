@@ -155,7 +155,37 @@ const translations = {
         contactFormButton: "Enviar Mensaje",
 
         // Footer
-        footerCopyright: "© 2026 Castor Dafonte. Todos los derechos reservados."
+        footerCopyright: "© 2026 Castor Dafonte. Todos los derechos reservados.",
+
+        // Nuevos textos (data-i18n)
+        skipLink: "Saltar al contenido",
+        heroEyebrow: "Software Architect en ARBENTIA · Vigo, España",
+        heroTypingPrefix: "Diseño soluciones con",
+        heroButtonCV: "Descargar CV",
+        heroBadgeCerts: "27 certificaciones Microsoft",
+        heroBadgeExpert: "3 certificaciones Expert",
+        heroBadgeAI: "Agentic AI Architect",
+        heroScroll: "Desplázate",
+        aboutEyebrow: "Perfil",
+        aboutHighlight1: "Arquitectura de soluciones ERP end-to-end",
+        aboutHighlight2: "Integraciones REST y APIs de alto volumen",
+        aboutHighlight3: "CI/CD en Azure DevOps y agentes con Copilot Studio",
+        expEyebrow: "Trayectoria",
+        certEyebrow: "Credenciales",
+        skillsEyebrow: "Stack",
+        eduEyebrow: "Formación",
+        contactEyebrow: "Hablemos",
+        contactEmailLabel: "Email",
+        contactLocationLabel: "Ubicación",
+        formLabelName: "Nombre",
+        formLabelEmail: "Email",
+        formLabelSubject: "Asunto",
+        formLabelMessage: "Mensaje",
+        formSending: "Enviando…",
+        formSuccess: "✓ Mensaje enviado correctamente. ¡Gracias por contactar!",
+        formError: "✗ Error al enviar el mensaje. Por favor, inténtalo de nuevo o escríbeme a castordafonte@outlook.es",
+        footerTagline: "Software Architect · Dynamics 365 Business Central & Power Platform",
+        footerMade: "Hecho en Vigo con HTML, CSS y JavaScript"
     },
     en: {
         // Meta tags
@@ -313,7 +343,37 @@ const translations = {
         contactFormButton: "Send Message",
 
         // Footer
-        footerCopyright: "© 2026 Castor Dafonte. All rights reserved."
+        footerCopyright: "© 2026 Castor Dafonte. All rights reserved.",
+
+        // New texts (data-i18n)
+        skipLink: "Skip to content",
+        heroEyebrow: "Software Architect at ARBENTIA · Vigo, Spain",
+        heroTypingPrefix: "I design solutions with",
+        heroButtonCV: "Download CV",
+        heroBadgeCerts: "27 Microsoft certifications",
+        heroBadgeExpert: "3 Expert certifications",
+        heroBadgeAI: "Agentic AI Architect",
+        heroScroll: "Scroll",
+        aboutEyebrow: "Profile",
+        aboutHighlight1: "End-to-end ERP solution architecture",
+        aboutHighlight2: "REST integrations and high-volume APIs",
+        aboutHighlight3: "CI/CD on Azure DevOps and agents with Copilot Studio",
+        expEyebrow: "Career",
+        certEyebrow: "Credentials",
+        skillsEyebrow: "Stack",
+        eduEyebrow: "Training",
+        contactEyebrow: "Let's talk",
+        contactEmailLabel: "Email",
+        contactLocationLabel: "Location",
+        formLabelName: "Name",
+        formLabelEmail: "Email",
+        formLabelSubject: "Subject",
+        formLabelMessage: "Message",
+        formSending: "Sending…",
+        formSuccess: "✓ Message sent successfully. Thanks for reaching out!",
+        formError: "✗ Error sending the message. Please try again or email me at castordafonte@outlook.es",
+        footerTagline: "Software Architect · Dynamics 365 Business Central & Power Platform",
+        footerMade: "Made in Vigo with HTML, CSS and JavaScript"
     }
 };
 
@@ -346,9 +406,10 @@ function switchLanguage(lang) {
 
 function updateLanguageButtons() {
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
+        const isActive = btn.dataset.lang === currentLang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
     });
-    document.querySelector(`[data-lang="${currentLang}"]`)?.classList.add('active');
 }
 
 function updateMetaTags() {
@@ -369,14 +430,25 @@ function updateMetaTags() {
 function updatePageContent() {
     const t = translations[currentLang];
 
-    // Navigation (sin "Inicio" porque ahora es el logo)
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks[0].textContent = t.navAbout;
-    navLinks[1].textContent = t.navExperience;
-    navLinks[2].textContent = t.navEducation;
-    navLinks[3].textContent = t.navCertifications;
-    navLinks[4].textContent = t.navSkills;
-    navLinks[5].textContent = t.navContact;
+    // Navigation (por destino, para no depender del orden de los enlaces)
+    const navByHref = {
+        '#sobre-mi': t.navAbout,
+        '#experiencia': t.navExperience,
+        '#educacion': t.navEducation,
+        '#certificaciones': t.navCertifications,
+        '#habilidades': t.navSkills,
+        '#contacto': t.navContact
+    };
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const label = navByHref[link.getAttribute('href')];
+        if (label) link.textContent = label;
+    });
+
+    // Textos genéricos marcados con data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const value = t[el.dataset.i18n];
+        if (value !== undefined) el.textContent = value;
+    });
 
     // Hero
     document.querySelector('.hero-title').textContent = t.heroTitle;
@@ -440,12 +512,18 @@ function updatePageContent() {
     // Certifications
     document.querySelector('#certificaciones .section-title').textContent = t.certificationsTitle;
     document.querySelector('#certificaciones > .container > p').textContent = t.certificationsSubtitle;
+    // Solo se sustituye el nodo de texto para conservar el contador de certificaciones
+    const setTextNode = (el, text) => {
+        const node = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+        if (node) node.textContent = text;
+        else el.prepend(document.createTextNode(text));
+    };
     const certLevelTitles = document.querySelectorAll('.cert-level-title');
-    certLevelTitles[0].textContent = t.certLevelAIBusiness;
-    certLevelTitles[1].textContent = t.certLevelExpert;
-    certLevelTitles[2].textContent = t.certLevelAssociate;
-    certLevelTitles[3].textContent = t.certLevelFundamentals;
-    certLevelTitles[4].textContent = t.certLevelOther;
+    setTextNode(certLevelTitles[0], t.certLevelAIBusiness);
+    setTextNode(certLevelTitles[1], t.certLevelExpert);
+    setTextNode(certLevelTitles[2], t.certLevelAssociate);
+    setTextNode(certLevelTitles[3], t.certLevelFundamentals);
+    setTextNode(certLevelTitles[4], t.certLevelOther);
 
     // Certification cards - Total 28 cards:
     const certCards = document.querySelectorAll('.cert-card h4');

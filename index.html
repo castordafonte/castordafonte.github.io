@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <!-- SEO Meta Tags -->
     <title>Castor Dafonte | Software Architect | Dynamics 365 Business Central & Power Platform</title>
@@ -14,6 +14,9 @@
     <meta name="author" content="Castor Dafonte">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Spanish">
+    <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="Y0vDOIiHMZx0ZpnEfw2BaxDUkBju8koKyHHLoNokgQc" />
@@ -24,7 +27,11 @@
     <meta property="og:title" content="Castor Dafonte | Software Architect | Dynamics 365 Business Central & Power Platform">
     <meta property="og:description"
         content="Software Architect en Dynamics 365 Business Central y Power Platform. Más de 8 años diseñando, integrando y desplegando soluciones Microsoft.">
-    <meta property="og:image" content="https://castordafonte.github.io/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://castordafonte.github.io/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -32,7 +39,7 @@
     <meta property="twitter:title" content="Castor Dafonte | Software Architect | Dynamics 365 Business Central & Power Platform">
     <meta property="twitter:description"
         content="Software Architect en Dynamics 365 Business Central y Power Platform. Más de 8 años diseñando, integrando y desplegando soluciones Microsoft.">
-    <meta property="twitter:image" content="https://castordafonte.github.io/assets/images/twitter-image.jpg">
+    <meta property="twitter:image" content="https://castordafonte.github.io/assets/images/og-image.png">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://castordafonte.github.io/">
@@ -43,8 +50,16 @@
     <link rel="alternate" hreflang="x-default" href="https://castordafonte.github.io/">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="image" href="assets/images/cd_logo_neon.png">
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -52,9 +67,12 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Castor Dafonte",
-    "jobTitle": "Software Architect",
-    "description": "Software Architect en Dynamics 365 Business Central y Power Platform con más de 8 años diseñando, integrando y desplegando soluciones Microsoft",
+      "jobTitle": "Software Architect",
+      "description": "Software Architect en Dynamics 365 Business Central y Power Platform con más de 8 años diseñando, integrando y desplegando soluciones Microsoft",
       "url": "https://castordafonte.github.io/",
+      "image": "https://castordafonte.github.io/assets/images/og-image.png",
+      "email": "mailto:castordafonte@outlook.es",
+      "address": { "@type": "PostalAddress", "addressLocality": "Vigo", "addressCountry": "ES" },
       "sameAs": [
         "https://www.linkedin.com/in/castordafonte/",
         "https://github.com/castordafonte",
@@ -79,149 +97,32 @@
         "Microsoft Copilot Studio"
       ],
       "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: AI Business Professional",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Transform AI with Business Central - Proficient",
-          "url": "https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Azure: Migrate and Modernize - Proficient",
-          "url": "https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Power Platform Solution Architect Expert",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft 365 Certified: Administrator Expert",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-                {
-                    "@type": "EducationalOccupationalCredential",
-                    "credentialCategory": "certification",
-                    "name": "Microsoft Certified: AI Transformation Leader",
-                    "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "Microsoft"
-                    }
-                },
-                {
-                    "@type": "EducationalOccupationalCredential",
-                    "credentialCategory": "certification",
-                    "name": "Microsoft Certified: Agentic AI Business Solutions Architect",
-                    "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "Microsoft"
-                    }
-                },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Power Platform Developer Associate",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Power Platform Functional Consultant Associate",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft Certified: Power Platform App Maker Associate",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/cf89b24ddb73795e",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "certification",
-          "name": "Microsoft 365 Certified: Teams Administrator Associate",
-          "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Microsoft"
-          }
-        }
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: AI Business Professional", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Transform AI with Business Central - Proficient", "url": "https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Azure: Migrate and Modernize - Proficient", "url": "https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Power Platform Solution Architect Expert", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft 365 Certified: Administrator Expert", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: AI Transformation Leader", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Agentic AI Business Solutions Architect", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Dynamics 365 Business Central Developer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Power Platform Developer Associate", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Power Platform Functional Consultant Associate", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Certified: Power Platform App Maker Associate", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/cf89b24ddb73795e", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft 365 Certified: Teams Administrator Associate", "url": "https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
       ],
       "hasOccupation": {
         "@type": "Occupation",
-                "name": "Software Architect",
+        "name": "Software Architect",
         "skills": [
           "Microsoft Dynamics 365 Business Central",
           "Power Platform",
           "Power Apps",
           "Power Automate",
-                    "Migraciones C/AL a AL",
-                    "Azure DevOps CI/CD",
-                    "Integraciones REST",
-                    "Microsoft Copilot Studio",
+          "Migraciones C/AL a AL",
+          "Azure DevOps CI/CD",
+          "Integraciones REST",
+          "Microsoft Copilot Studio",
           "Microsoft 365 Administration",
           "MS-100: Microsoft 365 Identity and Services",
           "MS-101: Microsoft 365 Mobility and Security"
@@ -230,37 +131,60 @@
     }
     </script>
 
+    <!-- Theme bootstrap (avoids flash of wrong theme) -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { }
+        })();
+    </script>
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"></noscript>
 </head>
 
 <body>
+    <a class="skip-link" href="#sobre-mi" data-i18n="skipLink">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-decor" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="#inicio" class="logo-link">
-                    <img src="assets/images/cd_logo.png" alt="Castor Dafonte Logo" class="logo">
+            <nav class="nav" aria-label="Principal">
+                <a href="#inicio" class="brand" aria-label="Castor Dafonte - Inicio">
+                    <span class="brand-mark" aria-hidden="true">CD</span>
+                    <span class="brand-text">Castor <strong>Dafonte</strong></span>
                 </a>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="nav-links">
+
+                <div class="nav-links" id="nav-links">
                     <a href="#sobre-mi" class="nav-link">Sobre mí</a>
                     <a href="#experiencia" class="nav-link">Experiencia</a>
                     <a href="#certificaciones" class="nav-link">Certificaciones</a>
                     <a href="#habilidades" class="nav-link">Habilidades</a>
                     <a href="#educacion" class="nav-link">Educación</a>
-                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <a href="#contacto" class="nav-link nav-link-cta">Contacto</a>
                 </div>
-                <div class="language-switcher">
-                    <button class="lang-btn lang-btn-es active" data-lang="es" onclick="switchLanguage('es')"
-                        title="Español">
-                        ES
+
+                <div class="nav-actions">
+                    <div class="language-switcher" role="group" aria-label="Idioma">
+                        <button class="lang-btn active" data-lang="es" onclick="switchLanguage('es')" title="Español" aria-pressed="true">ES</button>
+                        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')" title="English" aria-pressed="false">EN</button>
+                    </div>
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar tema">
+                        <i class="fas fa-moon theme-icon-dark" aria-hidden="true"></i>
+                        <i class="fas fa-sun theme-icon-light" aria-hidden="true"></i>
                     </button>
-                    <button class="lang-btn lang-btn-en" data-lang="en" onclick="switchLanguage('en')" title="English">
-                        EN
+                    <button class="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                 </div>
             </nav>
@@ -268,45 +192,70 @@
     </header>
 
     <main>
-        <!-- Sección Hero -->
+        <!-- Hero -->
         <section id="inicio" class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Castor Dafonte</h1>
-                    <p class="hero-subtitle">Software Architect | Dynamics 365 Business Central &amp; Power Platform</p>
-                    <p class="hero-description">
-                        Software Architect especializado en Dynamics 365 Business Central, Power Platform e
-                        Inteligencia Artificial. Más de 8 años diseñando soluciones empresariales Microsoft.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contacto" class="btn btn-primary">Contactar</a>
-                        <a href="assets/cv/Castor_Dafonte_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-cv">
-                            <i class="fas fa-file-arrow-down"></i> Descargar CV
-                        </a>
-                        <a href="https://linkedin.com/in/castordafonte" target="_blank" rel="noopener" class="btn btn-outline">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <p class="hero-eyebrow">
+                            <span class="pulse-dot" aria-hidden="true"></span>
+                            <span data-i18n="heroEyebrow">Software Architect en ARBENTIA · Vigo, España</span>
+                        </p>
+                        <h1 class="hero-title">Castor Dafonte</h1>
+                        <p class="hero-subtitle">Software Architect | Dynamics 365 Business Central &amp; Power Platform</p>
+                        <p class="hero-typing" aria-live="polite">
+                            <span data-i18n="heroTypingPrefix">Diseño soluciones con</span>
+                            <span class="typed-wrap"><span class="typed" id="typed"></span><span class="typed-cursor" aria-hidden="true"></span></span>
+                        </p>
+                        <p class="hero-description">
+                            Software Architect especializado en Dynamics 365 Business Central, Power Platform e
+                            Inteligencia Artificial. Más de 8 años diseñando soluciones empresariales Microsoft.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contacto" class="btn btn-primary">Contactar</a>
+                            <a href="assets/cv/Castor_Dafonte_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-cv">
+                                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> <span data-i18n="heroButtonCV">Descargar CV</span>
+                            </a>
+                            <a href="https://linkedin.com/in/castordafonte" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                        </div>
+                        <ul class="hero-badges" aria-label="Resumen">
+                            <li><i class="fas fa-award" aria-hidden="true"></i> <span data-i18n="heroBadgeCerts">27 certificaciones Microsoft</span></li>
+                            <li><i class="fas fa-layer-group" aria-hidden="true"></i> <span data-i18n="heroBadgeExpert">3 certificaciones Expert</span></li>
+                            <li><i class="fas fa-robot" aria-hidden="true"></i> <span data-i18n="heroBadgeAI">Agentic AI Architect</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="sign-board" id="sign-board">
+                            <div class="sign-grid"></div>
+                            <img src="assets/images/cd_logo_neon.png" alt="" class="sign-logo" width="900" height="626" fetchpriority="high">
+                            <span class="sign-glow"></span>
+                        </div>
+                        <span class="float-chip chip-1"><i class="fas fa-cube"></i> Business Central</span>
+                        <span class="float-chip chip-2"><i class="fas fa-bolt"></i> Power Platform</span>
+                        <span class="float-chip chip-3"><i class="fas fa-wand-magic-sparkles"></i> Copilot Studio</span>
+                        <span class="float-chip chip-4"><i class="fas fa-code-branch"></i> Azure DevOps</span>
                     </div>
                 </div>
-                <div class="scroll-indicator">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <div class="arrow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+
+                <a href="#sobre-mi" class="scroll-indicator" aria-label="Desplazarse a la siguiente sección">
+                    <span class="scroll-line"></span>
+                    <span class="scroll-label" data-i18n="heroScroll">Desplázate</span>
+                </a>
             </div>
         </section>
 
         <!-- Sobre mí -->
         <section id="sobre-mi" class="section">
             <div class="container">
-                <h2 class="section-title">Sobre mí</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">01</span> <span data-i18n="aboutEyebrow">Perfil</span></span>
+                    <h2 class="section-title">Sobre mí</h2>
+                </div>
                 <div class="about-content">
-                    <div class="about-text">
+                    <div class="about-text reveal">
                         <p>
                             Con una base sólida en tecnologías Microsoft y habiendo obtenido diversas certificaciones,
                             como las de Azure, Power Platform y Dynamics 365, mi carrera profesional ha evolucionado
@@ -317,18 +266,23 @@
                             empresariales con Dynamics 365 Business Central, Power Platform e IA. Combino arquitectura,
                             desarrollo y automatización para modernizar procesos críticos de negocio.
                         </p>
+                        <ul class="about-highlights">
+                            <li><i class="fas fa-sitemap" aria-hidden="true"></i><span data-i18n="aboutHighlight1">Arquitectura de soluciones ERP end-to-end</span></li>
+                            <li><i class="fas fa-plug" aria-hidden="true"></i><span data-i18n="aboutHighlight2">Integraciones REST y APIs de alto volumen</span></li>
+                            <li><i class="fas fa-rocket" aria-hidden="true"></i><span data-i18n="aboutHighlight3">CI/CD en Azure DevOps y agentes con Copilot Studio</span></li>
+                        </ul>
                     </div>
                     <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">8</span>
+                        <div class="stat reveal spotlight">
+                            <span class="stat-number" data-target="8">8</span>
                             <span class="stat-label">Años de experiencia</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">27</span>
+                        <div class="stat reveal spotlight">
+                            <span class="stat-number" data-target="27">27</span>
                             <span class="stat-label">Certificaciones Microsoft</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">5</span>
+                        <div class="stat reveal spotlight">
+                            <span class="stat-number" data-target="5">5</span>
                             <span class="stat-label">Plataformas Microsoft</span>
                         </div>
                     </div>
@@ -337,13 +291,16 @@
         </section>
 
         <!-- Experiencia -->
-        <section id="experiencia" class="section bg-light">
+        <section id="experiencia" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Experiencia Laboral</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">02</span> <span data-i18n="expEyebrow">Trayectoria</span></span>
+                    <h2 class="section-title">Experiencia Laboral</h2>
+                </div>
                 <div class="timeline">
-                    <div class="timeline-item">
+                    <div class="timeline-item reveal">
                         <div class="timeline-date">Mar 2026<br>Presente</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content spotlight">
                             <h3>Software Architect</h3>
                             <h4>ARBENTIA</h4>
                             <p>Arquitectura de soluciones empresariales con Business Central, Power Platform e IA,
@@ -355,9 +312,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item reveal">
                         <div class="timeline-date">Mar 2022<br>Feb 2026</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content spotlight">
                             <h3>Senior Consultant</h3>
                             <h4>ARBENTIA</h4>
                             <p>Responsable técnico de proyectos Business Central y Dynamics NAV de principio a fin,
@@ -369,9 +326,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="timeline-item">
+                    <div class="timeline-item reveal">
                         <div class="timeline-date">Jun 2018<br>Feb 2022</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content spotlight">
                             <h3>Consultant</h3>
                             <h4>ARBENTIA</h4>
                             <p>Consultoría especializada en Microsoft Dynamics 365 y Microsoft Dynamics NAV, ayudando a
@@ -390,250 +347,175 @@
         <!-- Certificaciones -->
         <section id="certificaciones" class="section">
             <div class="container">
-                <h2 class="section-title">Certificaciones Microsoft</h2>
-                <p style="text-align: center; margin-bottom: 3rem; color: #666;">
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">03</span> <span data-i18n="certEyebrow">Credenciales</span></span>
+                    <h2 class="section-title">Certificaciones Microsoft</h2>
+                </div>
+                <p class="section-lead">
                     Haz clic en cada certificación para ver la verificación oficial de Microsoft Learn
                 </p>
 
                 <!-- AI Expert -->
-                <h3 class="cert-level-title">AI Expert</h3>
+                <h3 class="cert-level-title cert-level-ai">AI Expert</h3>
                 <div class="certifications-grid">
-                    <div class="cert-card">
-                        <img src="assets/images/ai-business-professional.svg" alt="AI Business Professional Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/ai-business-professional.svg" alt="AI Business Professional Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>AI Business Professional</h4>
-                            <p class="cert-skills">Estrategia de IA • Soluciones IA para negocios • IA responsable •
-                                Herramientas de IA Microsoft</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Estrategia de IA • Soluciones IA para negocios • IA responsable • Herramientas de IA Microsoft</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/7658573620cbec43" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/transformAIwithBC.png" alt="Transform AI with Business Central Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/transformAIwithBC.png" alt="Transform AI with Business Central Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Transform AI with Business Central - Proficient</h4>
-                            <p class="cert-skills">IA en Business Central • Funciones Copilot • Procesos empresariales
-                                con IA • Automatización inteligente</p>
-                            <a href="https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0" target="_blank"
-                                rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">IA en Business Central • Funciones Copilot • Procesos empresariales con IA • Automatización inteligente</p>
+                            <a href="https://www.credly.com/badges/6dd36d24-836b-401f-b010-c6e8de105cc0" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/azureMigrate.png" alt="Azure Migrate Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/azureMigrate.png" alt="Azure Migrate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Azure: Migrate and Modernize - Proficient</h4>
-                            <p class="cert-skills">Migración Azure • Modernización cloud • Optimización de
-                                infraestructura • Servicios Azure</p>
-                            <a href="https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8" target="_blank"
-                                rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Migración Azure • Modernización cloud • Optimización de infraestructura • Servicios Azure</p>
+                            <a href="https://www.credly.com/badges/6000980f-8ff5-40fa-87bb-0007f699e7c8" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/ai_transformation_leader.png" alt="AI Transformation Leader Badge"
-                            class="cert-badge cert-badge-ai-transformation">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/ai_transformation_leader.png" alt="AI Transformation Leader Badge" class="cert-badge cert-badge-ai-transformation" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>AI Transformation Leader</h4>
-                            <p class="cert-skills">Business value of generative AI • Implementation and adoption
-                                strategy • Microsoft AI apps and services</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Business value of generative AI • Implementation and adoption strategy • Microsoft AI apps and services</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8c741ed3c6a8111f" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Applied Skills: Create agents in Microsoft Copilot Studio</h4>
                             <p class="cert-skills">Copilot Studio • AI agents • Conversational AI • Automation</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/85db3afb8d773d21"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/85db3afb8d773d21" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Applied Skills: Accelerate app development by using GitHub Copilot</h4>
-                            <p class="cert-skills">GitHub Copilot • AI-assisted development • Code acceleration •
-                                Productivity</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/caa407db3bd2dd8b"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">GitHub Copilot • AI-assisted development • Code acceleration • Productivity</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/caa407db3bd2dd8b" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/github-copilot.svg" alt="GitHub Copilot Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/github-copilot.svg" alt="GitHub Copilot Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>GitHub Copilot</h4>
                             <p class="cert-skills">AI-assisted coding • Code generation • Developer productivity</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/88e8d8db0d7d6349"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/88e8d8db0d7d6349" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/github-foundations.svg" alt="GitHub Foundations Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/github-foundations.svg" alt="GitHub Foundations Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>GitHub Foundations</h4>
                             <p class="cert-skills">Git fundamentals • GitHub collaboration • Version control</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/636d0c5b30b515a1"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/636d0c5b30b515a1" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Expert Level -->
-                <h3 class="cert-level-title">Expert Level</h3>
+                <h3 class="cert-level-title cert-level-expert">Expert Level</h3>
                 <div class="certifications-grid">
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Power Platform Solution Architect Expert</h4>
-                            <p class="cert-skills">Solution envisioning • Architecture design • Solution implementation
-                            </p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Solution envisioning • Architecture design • Solution implementation</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6f9cc9c2dfbe6c6e" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Microsoft 365 Administrator Expert</h4>
-                            <p class="cert-skills">Tenant-level implementation • Microsoft 365 workloads • Identity
-                                management</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Tenant-level implementation • Microsoft 365 workloads • Identity management</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/36d3084fde2c1eed" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-expert-badge.svg" alt="Expert Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Agentic AI Business Solutions Architect</h4>
-                            <p class="cert-skills">Plan AI-powered business solutions • Design AI-powered business
-                                solutions • Deploy AI-powered business solutions</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Plan AI-powered business solutions • Design AI-powered business solutions • Deploy AI-powered business solutions</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/8976e93e6ec3e4ef" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Associate Level -->
-                <h3 class="cert-level-title">Associate Level</h3>
+                <h3 class="cert-level-title cert-level-associate">Associate Level</h3>
                 <div class="certifications-grid">
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Dynamics 365 Business Central Functional Consultant Associate</h4>
-                            <p class="cert-skills">Business Central setup • Financials • Sales & purchasing • Operations
-                            </p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Business Central setup • Financials • Sales & purchasing • Operations</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/cc60e7840ae3a" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Dynamics 365 Business Central Developer Associate</h4>
-                            <p class="cert-skills">AL development • Extensions • Business Central customization •
-                                Integrations</p>
-                            <a href="https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">AL development • Extensions • Business Central customization • Integrations</p>
+                            <a href="https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Power Platform Developer Associate</h4>
-                            <p class="cert-skills">Technical design • Power Apps improvements • User experience •
-                                Platform extension • Integrations</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Technical design • Power Apps improvements • User experience • Platform extension • Integrations</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/aec3b931ce1296ce" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Power Platform Functional Consultant Associate</h4>
-                            <p class="cert-skills">Dataverse configuration • Power Apps creation • Logic & automation •
-                                Environment management</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Dataverse configuration • Power Apps creation • Logic & automation • Environment management</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/6adc26a5da232e03" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Power Platform App Maker Associate</h4>
-                            <p class="cert-skills">Canvas apps • Model-driven apps • Power Automate flows • Power Pages
-                            </p>
-                            <a href="https://learn.microsoft.com/api/credentials/share/es-es/castordafonte/cf89b24ddb73795e"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Canvas apps • Model-driven apps • Power Automate flows • Power Pages</p>
+                            <a href="https://learn.microsoft.com/api/credentials/share/es-es/castordafonte/cf89b24ddb73795e" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge"
-                            class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/microsoft-certified-associate-badge.svg" alt="Associate Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Microsoft 365 Teams Administrator Associate</h4>
-                            <p class="cert-skills">Teams environment • Chat & channels • Meetings & calling • Monitoring
-                                & troubleshooting</p>
-                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Teams environment • Chat & channels • Meetings & calling • Monitoring & troubleshooting</p>
+                            <a href="https://learn.microsoft.com/en-us/users/castordafonte/credentials/459f4e74ddc28c85" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
                 </div>
@@ -641,153 +523,110 @@
                 <!-- Fundamentals -->
                 <details class="certifications-collapsible">
                     <summary>
-                        <h3 class="cert-level-title">Fundamentals</h3>
+                        <h3 class="cert-level-title cert-level-fundamentals">Fundamentals</h3>
                     </summary>
-                <div class="certifications-grid">
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Azure AI Fundamentals</h4>
-                            <p class="cert-skills">AI workloads • Machine learning • Computer vision • NLP</p>
-                            <a href="https://www.credly.com/earner/earned/badge/ed2f90c6-7791-418e-a770-0bca7056d5c2"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                    <div class="certifications-grid">
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Azure AI Fundamentals</h4>
+                                <p class="cert-skills">AI workloads • Machine learning • Computer vision • NLP</p>
+                                <a href="https://www.credly.com/earner/earned/badge/ed2f90c6-7791-418e-a770-0bca7056d5c2" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Azure Data Fundamentals</h4>
-                            <p class="cert-skills">Data concepts • Relational & non-relational data • Data workloads</p>
-                            <a href="https://www.credly.com/earner/earned/badge/5b9ba502-6586-45d3-8f25-4aa406970b55"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Azure Data Fundamentals</h4>
+                                <p class="cert-skills">Data concepts • Relational & non-relational data • Data workloads</p>
+                                <a href="https://www.credly.com/earner/earned/badge/5b9ba502-6586-45d3-8f25-4aa406970b55" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Azure Fundamentals</h4>
-                            <p class="cert-skills">Cloud concepts • Azure services • Security • Compliance</p>
-                            <a href="https://www.credly.com/earner/earned/badge/ebbf9b42-390f-446c-a773-a364b26a06a5"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Azure Fundamentals</h4>
+                                <p class="cert-skills">Cloud concepts • Azure services • Security • Compliance</p>
+                                <a href="https://www.credly.com/earner/earned/badge/ebbf9b42-390f-446c-a773-a364b26a06a5" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Power Platform Fundamentals</h4>
-                            <p class="cert-skills">Power Platform value • Environment management • Power Apps • Power
-                                Automate • Power Pages</p>
-                            <a href="https://www.credly.com/earner/earned/badge/a5ab3eb0-e36c-4ff1-9ba0-8a064c55f6de"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Power Platform Fundamentals</h4>
+                                <p class="cert-skills">Power Platform value • Environment management • Power Apps • Power Automate • Power Pages</p>
+                                <a href="https://www.credly.com/earner/earned/badge/a5ab3eb0-e36c-4ff1-9ba0-8a064c55f6de" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Dynamics 365 Fundamentals (ERP)</h4>
-                            <p class="cert-skills">Dynamics 365 applications • Finance • Supply chain • Commerce</p>
-                            <a href="https://www.credly.com/earner/earned/badge/48b49082-0755-474a-8b21-1c30305e1460"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Dynamics 365 Fundamentals (ERP)</h4>
+                                <p class="cert-skills">Dynamics 365 applications • Finance • Supply chain • Commerce</p>
+                                <a href="https://www.credly.com/earner/earned/badge/48b49082-0755-474a-8b21-1c30305e1460" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge"
-                            class="cert-badge">
-                        <div class="cert-info">
-                            <h4>Security, Compliance, and Identity Fundamentals</h4>
-                            <p class="cert-skills">Security concepts • Identity & access • Threat protection •
-                                Compliance</p>
-                            <a href="https://www.credly.com/earner/earned/badge/b4c74d2a-4982-486d-be7a-ce14039734ac"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                        <div class="cert-card spotlight">
+                            <img src="assets/images/microsoft-certified-fundamentals-badge.svg" alt="Fundamentals Badge" class="cert-badge" width="80" height="80" loading="lazy">
+                            <div class="cert-info">
+                                <h4>Security, Compliance, and Identity Fundamentals</h4>
+                                <p class="cert-skills">Security concepts • Identity & access • Threat protection • Compliance</p>
+                                <a href="https://www.credly.com/earner/earned/badge/b4c74d2a-4982-486d-be7a-ce14039734ac" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </details>
 
-                <!-- Exámenes Aprobados -->
-                <h3 class="cert-level-title">Otras Certificaciones</h3>
+                <!-- Otras certificaciones -->
+                <h3 class="cert-level-title cert-level-other">Otras Certificaciones</h3>
                 <div class="certifications-grid">
-                    <div class="cert-card">
-                        <img src="assets/images/ms-100.png" alt="MS-100 Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/ms-100.png" alt="MS-100 Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>MS-100: Microsoft 365 Identity and Services</h4>
-                            <p class="cert-skills">Identity & services management • Microsoft 365 workloads
-                                configuration</p>
-                            <a href="https://www.credly.com/badges/ac07dc0b-dee6-4118-9adb-0324ed2e2175" target="_blank"
-                                rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Identity & services management • Microsoft 365 workloads configuration</p>
+                            <a href="https://www.credly.com/badges/ac07dc0b-dee6-4118-9adb-0324ed2e2175" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/images/ms-101.png" alt="MS-101 Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/images/ms-101.png" alt="MS-101 Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>MS-101: Microsoft 365 Mobility and Security</h4>
                             <p class="cert-skills">Security management • Device management • Data protection</p>
-                            <a href="https://www.credly.com/badges/eb5ac741-57fb-4bc6-b62c-7387ec95d79a" target="_blank"
-                                rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://www.credly.com/badges/eb5ac741-57fb-4bc6-b62c-7387ec95d79a" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Applied Skills: Create and Manage Canvas Apps with Power Apps</h4>
                             <p class="cert-skills">Canvas apps design • Power Apps development • App management</p>
-                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-manage-canvas-apps-power-apps"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-manage-canvas-apps-power-apps" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Applied Skills: Create and Manage Automated Processes with Power Automate</h4>
                             <p class="cert-skills">Workflow automation • Power Automate flows • Process optimization</p>
-                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-and-manage-automated-processes-with-power-automate"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/create-and-manage-automated-processes-with-power-automate" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
 
-                    <div class="cert-card">
-                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge">
+                    <div class="cert-card reveal spotlight">
+                        <img src="assets/zero-state-applied-skills.svg" alt="Applied Skills Badge" class="cert-badge" width="80" height="80" loading="lazy">
                         <div class="cert-info">
                             <h4>Applied Skills: Administer Active Directory Domain Services</h4>
-                            <p class="cert-skills">Active Directory management • Domain Services • User & group
-                                administration</p>
-                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/administer-active-directory-domain-services"
-                                target="_blank" rel="noopener" class="cert-verify-link">
-                                <i class="fas fa-external-link-alt"></i> Verificar certificación
-                            </a>
+                            <p class="cert-skills">Active Directory management • Domain Services • User & group administration</p>
+                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/credentials/applied-skill/administer-active-directory-domain-services" target="_blank" rel="noopener" class="cert-verify-link"><i class="fas fa-external-link-alt"></i> Verificar certificación</a>
                         </div>
                     </div>
                 </div>
@@ -795,11 +634,15 @@
         </section>
 
         <!-- Habilidades -->
-        <section id="habilidades" class="section bg-light">
+        <section id="habilidades" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">04</span> <span data-i18n="skillsEyebrow">Stack</span></span>
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-category">
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fas fa-cube" aria-hidden="true"></i></div>
                         <h3>Microsoft Dynamics 365</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Business Central</span>
@@ -810,7 +653,8 @@
                             <span class="skill-tag">C/AL</span>
                         </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
                         <h3>Microsoft Power Platform</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Power Apps</span>
@@ -821,8 +665,9 @@
                             <span class="skill-tag">Dataverse</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Microsoft 365 & Modern Work</h3>
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fab fa-microsoft" aria-hidden="true"></i></div>
+                        <h3>Microsoft 365 &amp; Modern Work</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Microsoft 365 Admin</span>
                             <span class="skill-tag">Microsoft Teams</span>
@@ -831,18 +676,20 @@
                             <span class="skill-tag">Exchange Online</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Seguridad & Identidad</h3>
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <h3>Seguridad &amp; Identidad</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Microsoft Entra ID</span>
                             <span class="skill-tag">Active Directory</span>
                             <span class="skill-tag">Microsoft Defender XDR</span>
                             <span class="skill-tag">Microsoft Purview</span>
-                            <span class="skill-tag">Security & Compliance</span>
+                            <span class="skill-tag">Security &amp; Compliance</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Desarrollo & Herramientas</h3>
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3>Desarrollo &amp; Herramientas</h3>
                         <div class="skill-list">
                             <span class="skill-tag">Visual Studio Code</span>
                             <span class="skill-tag">SQL Server</span>
@@ -851,14 +698,15 @@
                             <span class="skill-tag">REST APIs</span>
                         </div>
                     </div>
-                    <div class="skill-category">
+                    <div class="skill-category reveal spotlight">
+                        <div class="skill-icon"><i class="fas fa-compass-drafting" aria-hidden="true"></i></div>
                         <h3>Consultoría</h3>
                         <div class="skill-list">
                             <span class="skill-tag">ERP Implementation</span>
                             <span class="skill-tag">Business Process Analysis</span>
                             <span class="skill-tag">Solution Architecture</span>
                             <span class="skill-tag">Technical Consulting</span>
-                            <span class="skill-tag">Training & Support</span>
+                            <span class="skill-tag">Training &amp; Support</span>
                         </div>
                     </div>
                 </div>
@@ -868,15 +716,19 @@
         <!-- Educación -->
         <section id="educacion" class="section">
             <div class="container">
-                <h2 class="section-title">Educación</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">05</span> <span data-i18n="eduEyebrow">Formación</span></span>
+                    <h2 class="section-title">Educación</h2>
+                </div>
                 <div class="education-grid">
-                    <div class="education-item">
+                    <div class="education-item reveal spotlight">
+                        <div class="education-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
                         <h3>CIFP A Carballeira - Marcos Valcárcel</h3>
                         <span class="education-date">2016 - 2018</span>
-                        <p class="education-degree">Formación en tecnologías de la información y desarrollo de software.
-                        </p>
+                        <p class="education-degree">Formación en tecnologías de la información y desarrollo de software.</p>
                     </div>
-                    <div class="education-item">
+                    <div class="education-item reveal spotlight">
+                        <div class="education-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
                         <h3 class="education-english-title">Nivel de inglés</h3>
                         <span class="education-date">B2 | C1 en curso</span>
                     </div>
@@ -887,45 +739,56 @@
         <!-- Contacto -->
         <section id="contacto" class="section bg-dark">
             <div class="container">
-                <h2 class="section-title">Contacto</h2>
+                <div class="section-head">
+                    <span class="section-eyebrow"><span class="section-num">06</span> <span data-i18n="contactEyebrow">Hablemos</span></span>
+                    <h2 class="section-title">Contacto</h2>
+                </div>
                 <div class="contact-content">
-                    <div class="contact-info">
+                    <div class="contact-info reveal">
                         <h3>¡Hablemos!</h3>
                         <p>Estoy siempre abierto a nuevas oportunidades y proyectos relacionados con Microsoft Dynamics
                             365 y Power Platform.</p>
+                        <a class="contact-item" href="mailto:castordafonte@outlook.es">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span class="contact-item-text">
+                                <small data-i18n="contactEmailLabel">Email</small>
+                                <span>castordafonte@outlook.es</span>
+                            </span>
+                        </a>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>castordafonte@outlook.es</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Vigo, España</span>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span class="contact-item-text">
+                                <small data-i18n="contactLocationLabel">Ubicación</small>
+                                <span>Vigo, España</span>
+                            </span>
                         </div>
                         <div class="social-links">
-                            <a href="https://github.com/castordafonte" target="_blank" rel="noopener"
-                                class="social-link"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/castordafonte" target="_blank" rel="noopener"
-                                class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/" target="_blank"
-                                rel="noopener" class="social-link" title="Microsoft Learn Profile"><i
-                                    class="fab fa-microsoft"></i></a>
+                            <a href="https://github.com/castordafonte" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/castordafonte" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://learn.microsoft.com/es-es/users/castordafonte/" target="_blank" rel="noopener" class="social-link" aria-label="Microsoft Learn" title="Microsoft Learn Profile"><i class="fab fa-microsoft"></i></a>
                         </div>
                     </div>
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <input type="text" name="from_name" id="from_name" placeholder="Tu nombre" required>
+                    <form class="contact-form reveal" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="from_name" data-i18n="formLabelName">Nombre</label>
+                                <input type="text" name="from_name" id="from_name" placeholder="Tu nombre" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="reply_to" data-i18n="formLabelEmail">Email</label>
+                                <input type="email" name="reply_to" id="reply_to" placeholder="Tu email" required autocomplete="email">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="reply_to" id="reply_to" placeholder="Tu email" required>
-                        </div>
-                        <div class="form-group">
+                            <label for="subject" data-i18n="formLabelSubject">Asunto</label>
                             <input type="text" name="subject" id="subject" placeholder="Asunto" required>
                         </div>
                         <div class="form-group">
+                            <label for="message" data-i18n="formLabelMessage">Mensaje</label>
                             <textarea name="message" id="message" placeholder="Tu mensaje" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                        <div id="form-status" style="margin-top: 1rem; display: none;"></div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -934,14 +797,42 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Castor Dafonte. Todos los derechos reservados.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="brand" aria-label="Castor Dafonte - Inicio">
+                        <span class="brand-mark" aria-hidden="true">CD</span>
+                        <span class="brand-text">Castor <strong>Dafonte</strong></span>
+                    </a>
+                    <span class="footer-tagline" data-i18n="footerTagline">Software Architect · Dynamics 365 Business Central &amp; Power Platform</span>
+                </div>
+                <nav class="footer-nav" aria-label="Pie de página">
+                    <a href="#sobre-mi" class="footer-link" data-i18n="navAbout">Sobre mí</a>
+                    <a href="#experiencia" class="footer-link" data-i18n="navExperience">Experiencia</a>
+                    <a href="#certificaciones" class="footer-link" data-i18n="navCertifications">Certificaciones</a>
+                    <a href="#habilidades" class="footer-link" data-i18n="navSkills">Habilidades</a>
+                    <a href="#contacto" class="footer-link" data-i18n="navContact">Contacto</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://github.com/castordafonte" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/castordafonte" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://learn.microsoft.com/es-es/users/castordafonte/" target="_blank" rel="noopener" class="social-link" aria-label="Microsoft Learn"><i class="fab fa-microsoft"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Castor Dafonte. Todos los derechos reservados.</p>
+                <span class="footer-made" data-i18n="footerMade">Hecho en Vigo con HTML, CSS y JavaScript</span>
+            </div>
         </div>
     </footer>
 
+    <button class="scroll-to-top" id="scroll-to-top" type="button" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
     <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
