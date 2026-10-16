@@ -518,74 +518,23 @@ function updatePageContent() {
         if (node) node.textContent = text;
         else el.prepend(document.createTextNode(text));
     };
-    const certLevelTitles = document.querySelectorAll('.cert-level-title');
-    setTextNode(certLevelTitles[0], t.certLevelAIBusiness);
-    setTextNode(certLevelTitles[1], t.certLevelExpert);
-    setTextNode(certLevelTitles[2], t.certLevelAssociate);
-    setTextNode(certLevelTitles[3], t.certLevelFundamentals);
-    setTextNode(certLevelTitles[4], t.certLevelOther);
+    const certLevelKeys = ['certLevelExpert', 'certLevelAIBusiness', 'certLevelAssociate', 'certLevelFundamentals', 'certLevelOther'];
+    document.querySelectorAll('.cert-level-title').forEach((el, i) => setTextNode(el, t[certLevelKeys[i]]));
 
-    // Certification cards - Total 28 cards:
+    // Certification cards (orden del HTML: Expert, AI Expert, Associate, Fundamentals, Otras)
+    const certKeys = [
+        'PPSolutionArchitect', 'M365Admin', 'AgenticAIArchitect',
+        'AIBusiness', 'TransformAIBC', 'AzureMigrate', 'AITransformationLeader', 'AppliedCopilotStudio', 'AppliedGitHubCopilotDev', 'GitHubCopilot', 'GitHubFoundations',
+        'D365BC', 'D365BCDev', 'PPDeveloper', 'PPFunctional', 'PPAppMaker', 'M365Teams',
+        'AzureAI', 'AzureData', 'Azure', 'PPFund', 'D365Fund', 'Security',
+        'MS100', 'MS101', 'AppliedCanvasApps', 'AppliedPowerAutomate', 'AppliedAD'
+    ];
     const certCards = document.querySelectorAll('.cert-card h4');
-    certCards[0].textContent = t.certAIBusiness;
-    certCards[1].textContent = t.certTransformAIBC;
-    certCards[2].textContent = t.certAzureMigrate;
-    certCards[3].textContent = t.certAITransformationLeader;
-    certCards[4].textContent = t.certAppliedCopilotStudio;
-    certCards[5].textContent = t.certAppliedGitHubCopilotDev;
-    certCards[6].textContent = t.certGitHubCopilot;
-    certCards[7].textContent = t.certGitHubFoundations;
-    certCards[8].textContent = t.certPPSolutionArchitect;
-    certCards[9].textContent = t.certM365Admin;
-    certCards[10].textContent = t.certAgenticAIArchitect;
-    certCards[11].textContent = t.certD365BC;
-    certCards[12].textContent = t.certD365BCDev;
-    certCards[13].textContent = t.certPPDeveloper;
-    certCards[14].textContent = t.certPPFunctional;
-    certCards[15].textContent = t.certPPAppMaker;
-    certCards[16].textContent = t.certM365Teams;
-    certCards[17].textContent = t.certAzureAI;
-    certCards[18].textContent = t.certAzureData;
-    certCards[19].textContent = t.certAzure;
-    certCards[20].textContent = t.certPPFund;
-    certCards[21].textContent = t.certD365Fund;
-    certCards[22].textContent = t.certSecurity;
-    certCards[23].textContent = t.certMS100;
-    certCards[24].textContent = t.certMS101;
-    certCards[25].textContent = t.certAppliedCanvasApps;
-    certCards[26].textContent = t.certAppliedPowerAutomate;
-    certCards[27].textContent = t.certAppliedAD;
-
-    // Certification skills descriptions
     const certSkills = document.querySelectorAll('.cert-skills');
-    certSkills[0].textContent = t.skillsAIBusiness;
-    certSkills[1].textContent = t.skillsTransformAIBC;
-    certSkills[2].textContent = t.skillsAzureMigrate;
-    certSkills[3].textContent = t.skillsAITransformationLeader;
-    certSkills[4].textContent = t.skillsAppliedCopilotStudio;
-    certSkills[5].textContent = t.skillsAppliedGitHubCopilotDev;
-    certSkills[6].textContent = t.skillsGitHubCopilot;
-    certSkills[7].textContent = t.skillsGitHubFoundations;
-    certSkills[8].textContent = t.skillsPPSolutionArchitect;
-    certSkills[9].textContent = t.skillsM365Admin;
-    certSkills[10].textContent = t.skillsAgenticAIArchitect;
-    certSkills[11].textContent = t.skillsD365BC;
-    certSkills[12].textContent = t.skillsD365BCDev;
-    certSkills[13].textContent = t.skillsPPDeveloper;
-    certSkills[14].textContent = t.skillsPPFunctional;
-    certSkills[15].textContent = t.skillsPPAppMaker;
-    certSkills[16].textContent = t.skillsM365Teams;
-    certSkills[17].textContent = t.skillsAzureAI;
-    certSkills[18].textContent = t.skillsAzureData;
-    certSkills[19].textContent = t.skillsAzure;
-    certSkills[20].textContent = t.skillsPPFund;
-    certSkills[21].textContent = t.skillsD365Fund;
-    certSkills[22].textContent = t.skillsSecurity;
-    certSkills[23].textContent = t.skillsMS100;
-    certSkills[24].textContent = t.skillsMS101;
-    certSkills[25].textContent = t.skillsAppliedCanvasApps;
-    certSkills[26].textContent = t.skillsAppliedPowerAutomate;
-    certSkills[27].textContent = t.skillsAppliedAD;
+    certKeys.forEach((key, i) => {
+        if (certCards[i]) certCards[i].textContent = t['cert' + key];
+        if (certSkills[i]) certSkills[i].textContent = t['skills' + key];
+    });
 
     // Certification links - Todos usan el mismo estilo ahora
     document.querySelectorAll('.cert-verify-link').forEach((link) => {
