@@ -189,17 +189,28 @@
         if (!board || !wrap || prefersReducedMotion) return;
         if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
 
-        wrap.addEventListener('pointermove', (e) => {
-            const r = board.getBoundingClientRect();
-            const x = (e.clientX - r.left) / r.width - 0.5;
-            const y = (e.clientY - r.top) / r.height - 0.5;
-            board.style.setProperty('--ry', `${x * 10}deg`);
-            board.style.setProperty('--rx', `${-y * 10}deg`);
-        });
-        wrap.addEventListener('pointerleave', () => {
+        const chips = $$('.float-chip', wrap);
+        const reset = () => {
             board.style.setProperty('--ry', '0deg');
             board.style.setProperty('--rx', '0deg');
+            board.style.setProperty('--sc', '1');
+            chips.forEach(ch => { ch.style.setProperty('--px', '0px'); ch.style.setProperty('--py', '0px'); });
+        };
+
+        wrap.addEventListener('pointermove', (e) => {
+            const r = board.getBoundingClientRect();
+            const x = Math.max(-0.5, Math.min(0.5, (e.clientX - r.left) / r.width - 0.5));
+            const y = Math.max(-0.5, Math.min(0.5, (e.clientY - r.top) / r.height - 0.5));
+            board.style.setProperty('--ry', `${x * 22}deg`);
+            board.style.setProperty('--rx', `${-y * 22}deg`);
+            board.style.setProperty('--sc', '1.03');
+            chips.forEach((ch, i) => {
+                const depth = 14 + i * 6;
+                ch.style.setProperty('--px', `${-x * depth}px`);
+                ch.style.setProperty('--py', `${-y * depth}px`);
+            });
         });
+        wrap.addEventListener('pointerleave', reset);
     }
 
     /* ---------- Foco que sigue al ratón en tarjetas ---------- */
