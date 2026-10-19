@@ -455,6 +455,10 @@ function updatePageContent() {
     document.querySelector('.hero-subtitle').textContent = t.heroSubtitle;
     document.querySelector('.hero-description').textContent = t.heroDescription;
     document.querySelector('.hero-buttons .btn-primary').textContent = t.heroButtonContact;
+    document.querySelectorAll('.btn-cv').forEach(link => {
+        link.href = currentLang === 'en' ? 'assets/cv/Castor_Dafonte_CV_EN.pdf' : 'assets/cv/Castor_Dafonte_CV.pdf';
+        link.setAttribute('hreflang', currentLang);
+    });
 
     // About
     document.querySelector('#sobre-mi .section-title').textContent = t.aboutTitle;
